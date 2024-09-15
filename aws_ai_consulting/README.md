@@ -97,6 +97,7 @@ response_body = json.loads(response.get('body').read())
 
 # text
 print(response_body.get('completion'))
+```
 
 
 AI 모델 ID의 경우 Bedrock 제공업체 항목에서 하단의 API 요청 부분을 보면 나와있다.
