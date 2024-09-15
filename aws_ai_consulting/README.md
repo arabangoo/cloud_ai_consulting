@@ -110,12 +110,8 @@ AI 모델 ID의 경우 Bedrock 제공업체 항목에서 하단의 API 요청 �
   
   
 4. 파이썬 스크립트 파일 내용을 살펴보고 필요한 모듈이 있다면 미리 설치해주자.  
-boto3 등의 모듈이 없으면 아래 명령어로 모듈을 설치해주면 된다.  
-  
-명령어 : pip install boto3
+boto3 등의 모듈이 없으면 pip install boto3 명령어로 모듈을 설치해주면 된다.  
   
   
-6. 파이썬 스크립트 파일을 실행하기 위한 모든 모듈 설치가 완료되면 윈도우 cmd 창에서 아래 명령어를 통해 베드락 AI를 호출해보도록 하자.  
-     
-명령어 : python bedrock_test.py  
+5. 파이썬 스크립트 파일을 실행하기 위한 모든 모듈 설치가 완료되면 윈도우 cmd 창에서 python bedrock_test.py 명령어를 통해 베드락 AI를 호출해보도록 하자.    
 <img width="1600" alt="image" src="https://github.com/user-attachments/assets/0d3adf09-c1ad-411f-aa92-33b9b3373ef7">  
