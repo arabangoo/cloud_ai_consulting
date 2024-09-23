@@ -48,9 +48,12 @@
 설치가 완료되었다면 주피터 노트북 파일이 저장될 경로를 가정 먼저 설정해주어야 한다.
 주피터 노트북을 실행할 때 경로를 입력하지 않으면 현재 경로를 기준으로 실행된다.
 경로를 설정할 때는 아래의 명령어를 사용한다.
+
 명령어 : jupyter notebook
+
 특정 경로를 저장 위치로 설정하고 싶으면 아래와 같이 설정한다.
 경로는 본인이 원하는대로 바꿔줄 수 있다.
+
 명령어 : jupyter notebook --notebook-dir='C:\jupyter\notebook'
 <img width="1600" alt="image4" src="https://github.com/user-attachments/assets/4da599f6-4da3-4511-9e92-61ff557b8647">
 
