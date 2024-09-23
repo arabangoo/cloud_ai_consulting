@@ -117,6 +117,7 @@ boto3 등의 모듈이 없으면 pip install boto3 명령어로 모듈을 설치
 <img width="1600" alt="image" src="https://github.com/user-attachments/assets/0d3adf09-c1ad-411f-aa92-33b9b3373ef7">
 
 
+---
       
 
 [베드락 기반 플레이그라운드 파티락(PartyRock)]
@@ -151,8 +152,6 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 <img width="1600" alt="image6" src="https://github.com/user-attachments/assets/7878546a-5d3f-40c2-83e9-a0048a054a6c">
 
 
----
-
 파티락의 다른 기능들은 아래와 같다.
 
 빈 앱 – 빈 앱에서 시작을 선택하고 위젯을 선택한 다음 원하는 대로 설정할 수도 있다.
@@ -177,9 +176,6 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 
 백스테이지 – PartyRock 백스테이지에서 내 앱과 PartyRock 크레딧의 누적 사용량을 확인할 수 있다.
 ![image12](https://github.com/user-attachments/assets/b7e4ee0a-37ad-4c14-bec9-4ef116ebd21f)
-
-
----
 
 
 파티락 요금 :
