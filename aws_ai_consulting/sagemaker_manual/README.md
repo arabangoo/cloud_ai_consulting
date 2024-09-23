@@ -38,6 +38,7 @@
 여기서는 cmd 창에서 설치하는 방법을 설명하도록 하겠다.
 
 윈도우 cmd 창에서 아래 명령어를 입력해 주피터 노트북을 설치하도록 한다.
+
 명령어 : pip install jupyter
 <img width="1600" alt="image3" src="https://github.com/user-attachments/assets/c4718cf4-d7b9-4e06-bbcd-4a76bda2acab">
 
