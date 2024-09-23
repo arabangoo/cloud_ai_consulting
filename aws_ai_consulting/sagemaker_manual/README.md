@@ -238,3 +238,311 @@ VPC, IAM, KMS 등의 기능을 활용하여 보안을 강화할 수 있다.
 
 ---
 
+
+이제 베드락과 세이지메이커를 연동해보는 테스트를 해보겠다. 
+
+
+1. 세이지메이커 주피터 노트북에서 아래 코드를 실행해보자.
+
+
+'''python
+import boto3
+import json
+brt = boto3.client(service_name='bedrock-runtime')
+
+
+body = json.dumps({
+    "prompt": "\n\nHuman: explain black holes to university student\n\nAssistant:",
+    "max_tokens_to_sample": 500,
+    "temperature": 0.1,
+    "top_p": 0.9,
+})
+
+
+modelId = 'anthropic.claude-v2'
+accept = 'application/json'
+contentType = 'application/json'
+
+
+response = brt.invoke_model(body=body, modelId=modelId, accept=accept, contentType=contentType)
+
+
+response_body = json.loads(response.get('body').read())
+
+
+# text
+print(response_body.get('completion'))
+'''
+
+  
+2. 기본 권한 상태에서 위의 코드를 세이지메이커 주피터 노트북에서 실행하면 아래 이미지와 같은 에러가 발생할 것이다. 
+기본 권한 상태에서는 베드락 AI 모델에 대한 접근 권한이 없기 때문에 발생하는 에러다.
+
+
+
+3. 세이지메이커 주피터 노트북 생성시 지정했던 IAM 역할에 권한을 추가해보자.
+
+
+
+
+  
+4. 베드락 AI 모델을 호출하는 권한만 넣어주어도 되지만 본 테스트에서는 일단 "AmazonBedrockFullAccess" 권한을 추가하도록 하겠다. 
+
+         
+
+5. 다시 주피터 노트북에서 코드를 실행하면 정상적으로 코드가 실행되어 결과가 출력되는 것을 확인할 수 있다.
+
+
+
+
+  
+6. 이제 S3에 세이지메이커 주피터 노트북 코드 실행 결과를 저장해보겠다.
+우선 주피터 노트북의 코드 실행 결과를 저장할 S3를 확인해야 한다.
+지금까지의 과정을 따라왔다면 아마 아래와 같이 세이지메이커 S3가 만들어져 있을 것이다.
+
+
+
+7. 다음은 주피터 노트북의 코드를 아래와 같이 수정해본다.
+코드 내용 중 'user-sagemaker-bucket' 부분은 실제 세이지메이커 버킷명으로 수정해줘야 한다.
+
+
+'''python
+import boto3
+import json
+import datetime
+import pandas as pd
+
+
+# AWS S3 및 Bedrock 클라이언트 생성
+s3 = boto3.client('s3')
+brt = boto3.client(service_name='bedrock-runtime')
+
+
+# Bedrock 모델 호출 함수
+def invoke_bedrock_model(prompt):
+    body = json.dumps({
+        "prompt": prompt,
+        "max_tokens_to_sample": 500,
+        "temperature": 0.1,
+        "top_p": 0.9,
+    })
+
+
+    modelId = 'anthropic.claude-v2'
+    accept = 'application/json'
+    contentType = 'application/json'
+
+
+    response = brt.invoke_model(body=body, modelId=modelId, accept=accept, contentType=contentType)
+    response_body = json.loads(response.get('body').read())
+
+
+    return response_body
+
+
+# S3에 데이터 저장 함수
+def save_to_s3(data, bucket_name, file_name):
+    s3.put_object(Body=json.dumps(data), Bucket=bucket_name, Key=file_name)
+
+
+# S3에서 데이터 불러오기 함수
+def load_data_from_s3(bucket_name, prefix):
+    response = s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
+    data_frames = []
+    for obj in response.get('Contents', []):
+        response = s3.get_object(Bucket=bucket_name, Key=obj['Key'])
+        data = json.loads(response['Body'].read().decode('utf-8'))
+        df = pd.json_normalize(data)
+        data_frames.append(df)
+    return pd.concat(data_frames, ignore_index=True)
+
+
+# 메인 실행 함수
+def main():
+    # 사용자 입력 프롬프트
+    prompt = "\n\nHuman: explain black holes to university student\n\nAssistant:"
+    
+
+    # Bedrock 모델 호출
+    response_body = invoke_bedrock_model(prompt)
+    
+
+    # 결과 출력
+    completion_text = response_body.get('completion')
+    print(completion_text)
+    
+
+    # S3에 데이터 저장
+    bucket_name = 'user-sagemaker-bucket'  # 사용자의 S3 버킷 이름으로 변경
+    file_name = f'results_{datetime.datetime.now().strftime("%Y%m%d%H%M%S")}.json'
+    save_to_s3(response_body, bucket_name, file_name)
+    
+
+    # S3에서 데이터 불러오기
+    prefix = 'results_'  # 파일 이름의 접두사
+    data_df = load_data_from_s3(bucket_name, prefix)
+    
+
+    # 불러온 데이터 출력 (필요한 부분만 출력)
+    print('Data loaded from S3:')
+    for index, row in data_df.iterrows():
+        print(row['completion'])
+
+
+# 메인 함수 실행
+if __name__ == "__main__":
+    main()
+'''
+
+
+8. 세이지메이커 주피터 노트북에서 출력 결과가 정상적으로 나오는 것을 확인한 후 S3에도 정상적으로 파일이 추가되었는지 확인한다.
+
+
+
+
+
+   
+9. S3에 파일이 정상적으로 추가된 것이 확인되면 다운받아 파일 내용을 확인해보자.
+앞으로 세이지메이커의 주피터 노트북에서 코드가 실행될 때마다 S3에 이런 파일이 추가될 것이다.
+
+
+
+
+10. 세이지메이커 주피터 노트북에서 같은 코드를 계속 실행해도 답변이 바뀌는 것을 알 수 있다.
+S3에 축적된 파일의 내용을 종합하여 답변을 점점 발전시키는 것이다.
+
+
+
+
+11. 사람이 수동으로 S3에 "results_"라는 이름의 파일을 집어넣고 그 파일에 나와있는 내용까지 합쳐서 머신러닝을 한 다음 주피터 노트북에서 결과를 출력할 수 있다.
+또한, 세이지 메이커 주피터 노트북의 출력 결과 역시 S3에 저장하고 해당 S3를 바탕으로 머신러닝을 하여 답변을 더욱 발전시킬 수 있다.
+세이지메이커 주피터 노트북에서 코드를 아래와 같이 작성해보자.
+코드 내용 중 'user-sagemaker-bucket' 부분은 실제 세이지메이커 버킷명으로 수정해줘야 한다.
+
+
+'''python
+import boto3
+import json
+import datetime
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+
+# AWS S3 클라이언트 생성
+s3 = boto3.client('s3')
+
+
+# S3에서 데이터 불러오기 함수
+def load_data_from_s3(bucket_name, prefix):
+    response = s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
+    data_frames = []
+    for obj in response.get('Contents', []):
+        response = s3.get_object(Bucket=bucket_name, Key=obj['Key'])
+        data = json.loads(response['Body'].read().decode('utf-8'))
+        df = pd.json_normalize(data)
+        data_frames.append(df)
+    return pd.concat(data_frames, ignore_index=True)
+
+
+# Bedrock 모델 호출 함수
+def invoke_bedrock_model(prompt):
+    brt = boto3.client(service_name='bedrock-runtime')
+    body = json.dumps({
+        "prompt": prompt,
+        "max_tokens_to_sample": 500,
+        "temperature": 0.1,
+        "top_p": 0.9,
+    })
+
+
+    modelId = 'anthropic.claude-v2'
+    accept = 'application/json'
+    contentType = 'application/json'
+
+
+    response = brt.invoke_model(body=body, modelId=modelId, accept=accept, contentType=contentType)
+    response_body = json.loads(response.get('body').read())
+
+
+    return response_body
+
+
+# S3에 데이터 저장 함수
+def save_to_s3(data, bucket_name, file_name):
+    s3.put_object(Body=json.dumps(data), Bucket=bucket_name, Key=file_name)
+
+
+# 데이터 전처리 함수 (예제)
+def preprocess_data(df):
+    # 예제: 단순히 텍스트 길이를 feature로 사용
+    df['text_length'] = df['completion'].apply(len)
+    return df[['text_length']], df['text_length']  # 예측 대상은 자기 자신 (단순 예제)
+
+
+# 머신러닝 모델 훈련 및 예측 함수
+def train_and_predict(X, y):
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+    predictions = model.predict(X_test)
+    return predictions
+
+
+# 메인 실행 함수
+def main():
+    bucket_name = 'user-sagemaker-bucket'  # 사용자의 S3 버킷 이름으로 변경
+    prefix = 'results_'  # 파일 이름의 접두사
+
+
+    # S3에서 데이터 불러오기
+    data_df = load_data_from_s3(bucket_name, prefix)
+    
+
+    # 사용자 입력 프롬프트
+    prompt = "\n\nHuman: explain black holes to university student\n\nAssistant:"
+    
+
+    # Bedrock 모델 호출
+    response_body = invoke_bedrock_model(prompt)
+    
+
+    # 결과 출력
+    completion_text = response_body.get('completion')
+    print(completion_text)
+    
+
+    # S3에 데이터 저장
+    file_name = f'results_{datetime.datetime.now().strftime("%Y%m%d%H%M%S")}.json'
+    save_to_s3(response_body, bucket_name, file_name)
+    
+
+    # S3에서 불러온 데이터에 새로 생성된 데이터를 추가
+    new_row = pd.DataFrame([response_body])
+    data_df = pd.concat([data_df, new_row], ignore_index=True)
+    
+
+    # 데이터 전처리
+    X, y = preprocess_data(data_df)
+    
+
+    # 머신러닝 모델 훈련 및 예측
+    predictions = train_and_predict(X, y)
+    
+
+    # 예측 값 출력 제거 (순수한 답변만 출력)
+    #for prediction in predictions:
+    #    print(f'Predicted text length: {prediction}')
+
+
+# 메인 함수 실행
+if __name__ == "__main__":
+    main()
+'''
+
+    
+12. 세이지메이커 주피터 노트북에서 정상적으로 답변이 출력되는 것을 확인하자.
+그 뒤에 코드를 계속 반복 실행하면서 S3에도 정상적으로 파일이 추가되는지 확인한다.
+
+
