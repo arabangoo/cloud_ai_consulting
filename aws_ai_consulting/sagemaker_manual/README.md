@@ -283,7 +283,7 @@ print(response_body.get('completion'))
 
 
 3. 세이지메이커 주피터 노트북 생성시 지정했던 IAM 역할에 권한을 추가해보자.
-<img width="1400" alt="image2" src="https://github.com/user-attachments/assets/c8412964-4a8a-457c-8d6f-265d9a9f9ba3">
+<img width="759" alt="image2" src="https://github.com/user-attachments/assets/0561f1d5-921b-4d94-8850-054e8edb0acc">
 
   
 4. 베드락 AI 모델을 호출하는 권한만 넣어주어도 되지만 본 테스트에서는 일단 "AmazonBedrockFullAccess" 권한을 추가하도록 하겠다. 
