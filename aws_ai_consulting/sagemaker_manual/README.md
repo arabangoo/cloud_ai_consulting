@@ -246,6 +246,7 @@ VPC, IAM, KMS 등의 기능을 활용하여 보안을 강화할 수 있다.
 
 
 '''python
+
 import boto3
 import json
 brt = boto3.client(service_name='bedrock-runtime')
@@ -272,6 +273,7 @@ response_body = json.loads(response.get('body').read())
 
 # text
 print(response_body.get('completion'))
+
 '''
 
   
@@ -307,6 +309,7 @@ print(response_body.get('completion'))
 
 
 '''python
+
 import boto3
 import json
 import datetime
@@ -392,6 +395,7 @@ def main():
 # 메인 함수 실행
 if __name__ == "__main__":
     main()
+    
 '''
 
 
@@ -421,6 +425,7 @@ S3에 축적된 파일의 내용을 종합하여 답변을 점점 발전시키�
 
 
 '''python
+
 import boto3
 import json
 import datetime
@@ -539,6 +544,7 @@ def main():
 # 메인 함수 실행
 if __name__ == "__main__":
     main()
+    
 '''
 
     
