@@ -114,4 +114,74 @@ boto3 등의 모듈이 없으면 pip install boto3 명령어로 모듈을 설치
   
   
 5. 파이썬 스크립트 파일을 실행하기 위한 모든 모듈 설치가 완료되면 윈도우 cmd 창에서 python bedrock_test.py 명령어를 통해 베드락 AI를 호출해보도록 하자.    
-<img width="1600" alt="image" src="https://github.com/user-attachments/assets/0d3adf09-c1ad-411f-aa92-33b9b3373ef7">  
+<img width="1600" alt="image" src="https://github.com/user-attachments/assets/0d3adf09-c1ad-411f-aa92-33b9b3373ef7">
+
+
+      
+
+[베드락 기반 플레이그라운드 파티락(PartyRock)]
+
+파티락(PartyRock)은 Amazon Bedrock 기반 AI 앱 놀이터(playground)다.
+코드를 작성하거나 AWS 계정을 생성하지 않고도 생성형 AI를 테스트하고, 
+프롬프트 엔지니어링에 대해 배우고, 미니 앱을 빌드하고, 친구들과 공유할 수 있다. 
+공유된 앱으로 시작한 다음 이를 리믹스하여 더욱 기능을 향상시킬 수도 있다.
+
+1. 파티락은 아래 주소에 접속하면 사용할 수 있다.
+파티락 주소 - https://partyrock.aws/ 
+Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
+<img width="1800" alt="image1" src="https://github.com/user-attachments/assets/129fcf6d-02e2-45b8-8fb1-1ae889f54f2f">
+
+
+2. 샘플 앱을 검토하거나 직접 앱 빌드하기를 클릭하여 시작할 수 있다.
+빌드하려는 앱의 설명을 입력하고 PartyRock의 생성형 AI를 사용하여 실행을 시작하거나 위젯별로 직접 빌드할 수 있다.
+아래 이미지와 같이 생성하길 원하는 앱에 대한 설명을 작성하고 "Generate"를 클릭하자.
+<img width="600" alt="image2" src="https://github.com/user-attachments/assets/93824312-2a00-4e58-b274-fe1540313af8">
+
+     
+3. 어플리케이션이 생성되면 제대로 작동하는지 테스트를 해보자.
+<img width="1800" alt="image3" src="https://github.com/user-attachments/assets/05c77b73-6bec-48e1-9ed6-848e493b01da">
+
+
+4. 상단의 "Share"를 클릭하면 본인이 만든 파티락 앱의 링크를 다른 사람에게 공유할 수 있다.
+<img width="400" alt="image4" src="https://github.com/user-attachments/assets/4c99adff-218c-49a8-8eec-2b957798bd55">
+
+        
+5. 상단의 "Edit"를 클릭하면 위젯의 위치를 수정하거나 새로운 위젯을 추가할 수 있다.
+<img width="400" alt="image5" src="https://github.com/user-attachments/assets/8ec0536c-0e5e-4dfe-aa25-0f3e272d80d8">
+<img width="1600" alt="image6" src="https://github.com/user-attachments/assets/7878546a-5d3f-40c2-83e9-a0048a054a6c">
+
+
+---
+
+파티락의 다른 기능들은 아래와 같다.
+
+빈 앱 – 빈 앱에서 시작을 선택하고 위젯을 선택한 다음 원하는 대로 설정할 수도 있다.
+![image7](https://github.com/user-attachments/assets/a586dc14-5e96-404a-b8d5-306bbf7c8e1f)
+
+
+리믹스 – 기존 앱(내 앱 또는 다른 공개 앱)으로 시작한 다음 리믹스하여 사용자 지정하거나 개선할 수 있다.
+![image8](https://github.com/user-attachments/assets/e99f3455-7e69-4520-9845-dd1ef4b6cb74)
+
+
+챗봇 위젯 – 프롬프트를 시작점으로 사용하여 앱과 상호작용할 수 있다. 
+![image9](https://github.com/user-attachments/assets/0175fda0-6741-4951-9820-9d0689d98f96)
+
+
+@ 참조 – 앱을 빌드하는 동안 ‘@’을 사용하여 이름을 기준으로 다른 위젯을 참조할 수 있다.
+![image10](https://github.com/user-attachments/assets/80669d97-0c91-418a-a110-6505bc1cd87a)
+
+
+고급 설정 – 일부 위젯은 고급 설정을 제공합니다. 예를 들어, 텍스트 생성 위젯은 모델에 대한 Temperature 및 Top P 파라미터를 제어할 수 있는 옵션을 제공한다.
+![image11](https://github.com/user-attachments/assets/aad8120f-aefb-46ff-b383-774b6d914f05)
+
+
+백스테이지 – PartyRock 백스테이지에서 내 앱과 PartyRock 크레딧의 누적 사용량을 확인할 수 있다.
+![image12](https://github.com/user-attachments/assets/b7e4ee0a-37ad-4c14-bec9-4ef116ebd21f)
+
+
+---
+
+
+파티락 요금 :
+AWS는 제한된 기간 동안 신규 PartyRock 사용자에게 신용카드 정보 입력이나 AWS 계정 가입 없이 무료 평가판을 제공하므로 비용 발생에 대해 걱정하지 않고 기본 기술 학습을 시작할 수 있다. 
+Backstage에서 크레딧 사용량을 추적할 수 있으며 크레딧 사용량은 입력 토큰, 출력 토큰, 생성된 이미지를 기반으로 계산된다.
