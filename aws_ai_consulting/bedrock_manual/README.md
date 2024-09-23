@@ -71,7 +71,7 @@ AI 액세스 권한이 없으면 로컬 PC에서 코드를 실행해도 동작�
 <img width="1400" alt="image" src="https://github.com/user-attachments/assets/caf007c9-3815-4c98-b4d9-edd8104741dc">  
   
   
-2. 로컬 PC나 윈도우 서버 상에 아래의 파이썬 스크립트 파일(aws_ai_consulting/bedrock_test.py)을 작성해 놓는다.  
+2. 로컬 PC나 윈도우 서버 상에 아래의 파이썬 스크립트 파일(bedrock_test.py)을 작성해 놓는다.  
 영어권 대학생들에게 블랙홀에 대해 설명하라는 내용이다.  
   
   
