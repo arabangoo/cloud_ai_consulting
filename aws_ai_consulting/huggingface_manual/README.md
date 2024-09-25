@@ -11,6 +11,7 @@ Hugging Face(허깅페이스)란 자연어 처리, 이미지 생성모델, 컴�
 
 1. 허깅페이스 가입하기
 (1) 우선 허깅페이스 사이트에 들어가서 계정을 만들도록 하자.
+
 https://huggingface.co/
 ![image2](https://github.com/user-attachments/assets/f3de8983-4f31-41e0-8a14-4f9326d6d1d4)
 
@@ -171,11 +172,13 @@ Inference API를 통해 실시간으로 AI 모델을 배포할 수 있으며 사
 가격은 사용량에 따라 다르며 일반적으로 API 호출당 몇 센트에서 수십 센트 사이이다.
 
 Hugging Face의 가격 정책에 관해서는 아래 공식 사이트에서 더 상세히 확인 가능하다.
+
 https://huggingface.co/pricing
 ![image15](https://github.com/user-attachments/assets/bd8b1c0b-20bf-4efc-9cfe-0a3c86680b6d)
 
       
 6. 허깅페이스 GitHub 리포지토리
-허깅페이스에서 제공하는 GitHub 리포지토리는 아래 링크에서 확인 가능하다.   
+허깅페이스에서 제공하는 GitHub 리포지토리는 아래 링크에서 확인 가능하다.
+
 https://github.com/huggingface
 <img width="1800" alt="image16" src="https://github.com/user-attachments/assets/3e0ea123-c4f1-4f5f-9b7d-3b84f36d6c30">
