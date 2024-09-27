@@ -9,7 +9,8 @@ Hugging Face(허깅페이스)란 자연어 처리, 이미지 생성모델, 컴�
 즉, 따로 구현을 하지 않고 arguments를 줌으로써 편하게 사용이 가능하다.     
 <br/><br/>     
 
-1. 허깅페이스 가입하기      
+1. 허깅페이스 가입하기
+<br/>     
 (1) 우선 허깅페이스 사이트에 들어가서 계정을 만들도록 하자.
 <br/>
 
@@ -63,7 +64,8 @@ https://huggingface.co/
 ![image13](https://github.com/user-attachments/assets/3b6fcaea-76d4-4b04-8467-c1577fa7643e)
 <br/><br/>
 
-2. 허깅페이스 기능 및 도구      
+2. 허깅페이스 기능 및 도구
+<br/>      
 (1) Transformers 라이브러리   
 Hugging Face의 Transformers 라이브러리는 BERT, GPT-2, GPT-3, RoBERTa, T5 등 다양한 NLP 모델들을 제공하는 오픈소스 라이브러리다.    
 이 라이브러리는 복잡한 AI 모델을 쉽게 사용할 수 있도록 설계되었으며 특히 자연어 이해(NLU), 자연어 생성(NLG) 작업에서 큰 성과를 내고 있다.    
@@ -109,7 +111,8 @@ Inference API는 다양한 프로그래밍 언어와 프레임워크에서 쉽�
 ![image14](https://github.com/user-attachments/assets/ab4d01c4-dc4a-4475-94c0-8cef93a2632c)
 <br/><br/>
 
-4. Hugging Face의 활용 사례   
+4. Hugging Face의 활용 사례
+<br/>
 (1) 금융 업계 - 고객 서비스 자동화   
 NLP 모델을 활용한 고객 지원 챗봇과 문서 분석 시스템을 개발하는데 사용된다.    
 이를 통해 고객 응대 속도를 높이고 문서 처리를 자동화할 수 있다.    
@@ -149,7 +152,8 @@ Duolingo : 언어 학습 플랫폼 Duolingo는 허깅페이스의 NLP 기술을 
 이를 통해 학습자의 수준에 맞는 문제를 제시하고 자연어로 피드백을 제공하여 학습 효과를 극대화하고 있다.   
 <br/><br/> 
 
-5. 허깅페이스 비즈니스 모델과 가격 정책      
+5. 허깅페이스 비즈니스 모델과 가격 정책
+<br/>      
 (1) Hugging Face의 비즈니스 모델   
 허깅페이스 비즈니스 모델은 프리미엄 서비스와 API 사용료가 있다.   
 <br/>
@@ -191,9 +195,7 @@ Inference API를 통해 실시간으로 AI 모델을 배포할 수 있으며 사
 가격은 사용량에 따라 다르며 일반적으로 API 호출당 몇 센트에서 수십 센트 사이이다.
 <br/>
 
-Hugging Face의 가격 정책에 관해서는 아래 공식 사이트에서 더 상세히 확인 가능하다.   
-<br/>
-
+Hugging Face의 가격 정책에 관해서는 아래 공식 사이트에서 더 상세히 확인 가능하다.      
 https://huggingface.co/pricing
 ![image15](https://github.com/user-attachments/assets/bd8b1c0b-20bf-4efc-9cfe-0a3c86680b6d)
 <br/>
