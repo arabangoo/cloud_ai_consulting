@@ -134,29 +134,29 @@ boto3 등의 모듈이 없으면 pip install boto3 명령어로 모듈을 설치
 파티락 주소 - https://partyrock.aws/    
 Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.   
 <img width="1800" alt="image1" src="https://github.com/user-attachments/assets/129fcf6d-02e2-45b8-8fb1-1ae889f54f2f">
-<br/>
+<br/><br/> 
 
 2. 샘플 앱을 검토하거나 직접 앱 빌드하기를 클릭하여 시작할 수 있다.      
 빌드하려는 앱의 설명을 입력하고 PartyRock의 생성형 AI를 사용하여 실행을 시작하거나 위젯별로 직접 빌드할 수 있다.   
 아래 이미지와 같이 생성하길 원하는 앱에 대한 설명을 작성하고 "Generate"를 클릭하자.   
 <img width="600" alt="image2" src="https://github.com/user-attachments/assets/93824312-2a00-4e58-b274-fe1540313af8">
-<br/>
+<br/><br/> 
      
 3. 어플리케이션이 생성되면 제대로 작동하는지 테스트를 해보자. 
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/05c77b73-6bec-48e1-9ed6-848e493b01da">
-<br/>
+<br/><br/> 
 
 4. 상단의 "Share"를 클릭하면 본인이 만든 파티락 앱의 링크를 다른 사람에게 공유할 수 있다.
 <img width="400" alt="image4" src="https://github.com/user-attachments/assets/4c99adff-218c-49a8-8eec-2b957798bd55">
-<br/>
+<br/><br/> 
         
 5. 상단의 "Edit"를 클릭하면 위젯의 위치를 수정하거나 새로운 위젯을 추가할 수 있다.
 <img width="400" alt="image5" src="https://github.com/user-attachments/assets/8ec0536c-0e5e-4dfe-aa25-0f3e272d80d8">
 <img width="1600" alt="image6" src="https://github.com/user-attachments/assets/7878546a-5d3f-40c2-83e9-a0048a054a6c">
-<br/>
+<br/><br/> 
 
 파티락의 다른 기능들은 아래와 같다.
-<br/>
+<br/><br/> 
 
 빈 앱 – 빈 앱에서 시작을 선택하고 위젯을 선택한 다음 원하는 대로 설정할 수도 있다.
 ![image7](https://github.com/user-attachments/assets/a586dc14-5e96-404a-b8d5-306bbf7c8e1f)
