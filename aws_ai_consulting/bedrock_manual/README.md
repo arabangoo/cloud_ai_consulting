@@ -159,7 +159,7 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 
 
 파티락의 다른 기능들은 아래와 같다.
-<br/><br/>
+<br/>
 
 빈 앱 – 빈 앱에서 시작을 선택하고 위젯을 선택한 다음 원하는 대로 설정할 수도 있다.
 ![image7](https://github.com/user-attachments/assets/a586dc14-5e96-404a-b8d5-306bbf7c8e1f)
