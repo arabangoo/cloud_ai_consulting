@@ -136,13 +136,13 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 <img width="1800" alt="image1" src="https://github.com/user-attachments/assets/129fcf6d-02e2-45b8-8fb1-1ae889f54f2f">
 <br/><br/>
 
-2. 샘플 앱을 검토하거나 직접 앱 빌드하기를 클릭하여 시작할 수 있다.   
-빌드하려는 앱의 설명을 입력하고 PartyRock의 생성형 AI를 사용하여 실행을 시작하거나 위젯별로 직접 빌드할 수 있다.
-아래 이미지와 같이 생성하길 원하는 앱에 대한 설명을 작성하고 "Generate"를 클릭하자.
+2. 샘플 앱을 검토하거나 직접 앱 빌드하기를 클릭하여 시작할 수 있다.      
+빌드하려는 앱의 설명을 입력하고 PartyRock의 생성형 AI를 사용하여 실행을 시작하거나 위젯별로 직접 빌드할 수 있다.   
+아래 이미지와 같이 생성하길 원하는 앱에 대한 설명을 작성하고 "Generate"를 클릭하자.   
 <img width="600" alt="image2" src="https://github.com/user-attachments/assets/93824312-2a00-4e58-b274-fe1540313af8">
 <br/><br/>
      
-3. 어플리케이션이 생성되면 제대로 작동하는지 테스트를 해보자.
+3. 어플리케이션이 생성되면 제대로 작동하는지 테스트를 해보자. 
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/05c77b73-6bec-48e1-9ed6-848e493b01da">
 <br/><br/>
 
@@ -182,6 +182,6 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 ![image12](https://github.com/user-attachments/assets/b7e4ee0a-37ad-4c14-bec9-4ef116ebd21f)
 <br/><br/>
 
-파티락 요금 :
-AWS는 제한된 기간 동안 신규 PartyRock 사용자에게 신용카드 정보 입력이나 AWS 계정 가입 없이 무료 평가판을 제공하므로 비용 발생에 대해 걱정하지 않고 기본 기술 학습을 시작할 수 있다. 
-Backstage에서 크레딧 사용량을 추적할 수 있으며 크레딧 사용량은 입력 토큰, 출력 토큰, 생성된 이미지를 기반으로 계산된다.
+파티락 요금 :   
+AWS는 제한된 기간 동안 신규 PartyRock 사용자에게 신용카드 정보 입력이나 AWS 계정 가입 없이 무료 평가판을 제공하므로 비용 발생에 대해 걱정하지 않고 기본 기술 학습을 시작할 수 있다.    
+Backstage에서 크레딧 사용량을 추적할 수 있으며 크레딧 사용량은 입력 토큰, 출력 토큰, 생성된 이미지를 기반으로 계산된다.   
