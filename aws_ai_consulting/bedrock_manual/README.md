@@ -177,7 +177,8 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 ![image10](https://github.com/user-attachments/assets/80669d97-0c91-418a-a110-6505bc1cd87a)
 <br/><br/>
 
-고급 설정 – 일부 위젯은 고급 설정을 제공합니다. 예를 들어, 텍스트 생성 위젯은 모델에 대한 Temperature 및 Top P 파라미터를 제어할 수 있는 옵션을 제공한다.
+고급 설정 – 일부 위젯은 고급 설정을 제공합니다.    
+예를 들어, 텍스트 생성 위젯은 모델에 대한 Temperature 및 Top P 파라미터를 제어할 수 있는 옵션을 제공한다.
 
 ![image11](https://github.com/user-attachments/assets/aad8120f-aefb-46ff-b383-774b6d914f05)
 <br/><br/>
