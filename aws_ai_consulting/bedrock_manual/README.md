@@ -11,10 +11,12 @@ ChatGPT 등의 생성형 AI를 이용해본 사람은 베드락에서도 비슷�
 사용하기 전에 먼저 사용 가능한 리전을 확인해본다.  
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/54f8127a-3a1d-4910-93fc-9bfe91c36897">
 <br/>
+
   
 2. AWS에서 베드락 서비스로 들어간다.  
 <img width="1400" alt="image" src="https://github.com/user-attachments/assets/8069c7c6-4fd0-4e2d-a353-521b0b3b656a">
 <br/>     
+
     
 3. 보통은 AI 모델에 대한 액세스 권한이 없다.  
 AI 모델을 사용하기 위해서는 하단의 "모델 액세스"에서 액세스 권한을 요청해야 한다.  
