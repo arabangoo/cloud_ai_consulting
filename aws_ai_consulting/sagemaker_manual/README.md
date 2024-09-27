@@ -181,7 +181,7 @@ TensorFlow는 딥 러닝 및 머신 러닝 모델을 구축하고 배포하는 �
 7. ChatGPT에서 간단한 코드를 받아 복사한 후 SageMaker Jupyter에서 코드를 실행해보자. 
 <img width="800" alt="image6" src="https://github.com/user-attachments/assets/77e8ee66-0256-43c8-9f47-b51a05848063">
 <img width="600" alt="image7" src="https://github.com/user-attachments/assets/7de82b0d-b51a-4db0-a19f-7a5d521a0c5a">
-<br/>
+<br/><br/>
 
 8. 로컬 PC에서 주피터 노트북을 실행했을 때와 동일하게 SageMaker 노트북에서도 코드가 정상 동작하는 것을 확인할 수 있다.
 <img width="1000" alt="image8" src="https://github.com/user-attachments/assets/923a0a65-126b-48c6-822b-f6660a2a285c">
@@ -258,7 +258,7 @@ VPC, IAM, KMS 등의 기능을 활용하여 보안을 강화할 수 있다.
 <br/>
 
 1. 세이지메이커 주피터 노트북에서 아래 코드(sagemaker_test_1.py)를 실행해보자.
-<br/>   
+<br/><br/>   
 
 ```python
 import boto3
@@ -293,25 +293,25 @@ print(response_body.get('completion'))
 2. 기본 권한 상태에서 위의 코드를 세이지메이커 주피터 노트북에서 실행하면 아래 이미지와 같은 에러가 발생할 것이다.    
 기본 권한 상태에서는 베드락 AI 모델에 대한 접근 권한이 없기 때문에 발생하는 에러다.   
 <img width="1000" alt="image1" src="https://github.com/user-attachments/assets/f4b83e9c-f306-4564-86e2-2f74dd252cd0">
-<br/>
+<br/><br/>
 
 3. 세이지메이커 주피터 노트북 생성시 지정했던 IAM 역할에 권한을 추가해보자.
 <img width="1400" alt="image2" src="https://github.com/user-attachments/assets/0561f1d5-921b-4d94-8850-054e8edb0acc">
-<br/>
+<br/><br/>
   
 4. 베드락 AI 모델을 호출하는 권한만 넣어주어도 되지만 본 테스트에서는 일단 "AmazonBedrockFullAccess" 권한을 추가하도록 하겠다. 
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/2c037a9c-3040-4df3-84ac-ce82c9a6cb82">
-<br/>
+<br/><br/>
          
 5. 다시 주피터 노트북에서 코드를 실행하면 정상적으로 코드가 실행되어 결과가 출력되는 것을 확인할 수 있다.
 <img width="1000" alt="image4" src="https://github.com/user-attachments/assets/b0657e81-1282-423f-bac8-c834de7d7170">
-<br/>
+<br/><br/>
   
 6. 이제 S3에 세이지메이커 주피터 노트북 코드 실행 결과를 저장해보겠다.   
 우선 주피터 노트북의 코드 실행 결과를 저장할 S3를 확인해야 한다.   
 지금까지의 과정을 따라왔다면 아마 아래와 같이 세이지메이커 S3가 만들어져 있을 것이다.   
 <img width="800" alt="image5" src="https://github.com/user-attachments/assets/c4425162-ad4d-4b86-9492-5f849bb8abd9">
-<br/>
+<br/><br/>
 
 7. 다음은 주피터 노트북의 코드를 아래 코드(sagemaker_test_2.py)와 같이 수정해본다.   
 sagemaker_test_2.py 코드 내용 중 'user-sagemaker-bucket' 부분은 실제 세이지메이커 버킷명으로 수정해줘야 한다.   
@@ -409,19 +409,19 @@ if __name__ == "__main__":
 8. 세이지메이커 주피터 노트북에서 출력 결과가 정상적으로 나오는 것을 확인한 후 S3에도 정상적으로 파일이 추가되었는지 확인한다.
 <img width="1000" alt="image6" src="https://github.com/user-attachments/assets/8fffb929-dc9a-4de9-b33a-a299bfdc9e35">
 <img width="1600" alt="image7" src="https://github.com/user-attachments/assets/052da0ec-67cf-415f-8fbf-f47faefaddfc">
-<br/>
+<br/><br/>
   
 9. S3에 파일이 정상적으로 추가된 것이 확인되면 다운받아 파일 내용을 확인해보자.   
 앞으로 세이지메이커의 주피터 노트북에서 코드가 실행될 때마다 S3에 이런 파일이 추가될 것이다.
 <img width="1400" alt="image8" src="https://github.com/user-attachments/assets/42a02590-d9ae-4baf-bbd9-183f0c3b8be5">
 <img width="1600" alt="image9" src="https://github.com/user-attachments/assets/327f2e68-cd70-4ae5-a0dc-aed6cfb08ef8">
-<br/>
+<br/><br/>
 
 10. 세이지메이커 주피터 노트북에서 같은 코드를 계속 실행해도 답변이 바뀌는 것을 알 수 있다.   
 S3에 축적된 파일의 내용을 종합하여 답변을 점점 발전시키는 것이다.
 <img width="2000" alt="image10" src="https://github.com/user-attachments/assets/e1d1d4fc-ef60-44be-895d-a5abda03e5a0">
 <img width="2000" alt="image11" src="https://github.com/user-attachments/assets/a20027ad-2d36-4b23-b577-21189a496bb4">
-<br/>
+<br/><br/>
 
 11. 사람이 수동으로 S3에 "results_"라는 이름의 파일을 집어넣고 그 파일에 나와있는 내용까지 합쳐서 머신러닝을 한 다음 주피터 노트북에서 결과를 출력할 수 있다.   
 또한, 세이지 메이커 주피터 노트북의 출력 결과 역시 S3에 저장하고 해당 S3를 바탕으로 머신러닝을 하여 답변을 더욱 발전시킬 수 있다.   
