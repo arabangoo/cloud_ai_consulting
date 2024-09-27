@@ -176,7 +176,7 @@ TensorFlow는 딥 러닝 및 머신 러닝 모델을 구축하고 배포하는 �
 (10) Terminal : 주피터 노트북 환경 내에서 터미널을 연다.          
 이를 통해 명령줄 작업을 수행할 수 있다.         
 ![image5](https://github.com/user-attachments/assets/a16fd2f9-e383-4a14-a1db-8b65d601226c)
-<br/>
+<br/><br/>
 
 7. ChatGPT에서 간단한 코드를 받아 복사한 후 SageMaker Jupyter에서 코드를 실행해보자. 
 <img width="800" alt="image6" src="https://github.com/user-attachments/assets/77e8ee66-0256-43c8-9f47-b51a05848063">
