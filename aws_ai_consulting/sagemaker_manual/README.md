@@ -28,38 +28,36 @@
 <img width="1600" alt="image2" src="https://github.com/user-attachments/assets/3855f7f9-e3c3-4ef4-b96d-0d2b5dcf6fcb">
 <br/>
 
-(2) 주피터 노트북 설치   
-주피터 노트북을 설치하는 방법은 두 가지가 있다. 
-하나는 cmd 창에서 설치하는 방법이고 하나는 아나콘다를 통해 설치하는 방법이다.
-아나콘다를 통해 설치하는 방법은 아나콘다도 깔아야 하고 시간이 더 걸리기 때문에
-여기서는 cmd 창에서 설치하는 방법을 설명하도록 하겠다.
-
-윈도우 cmd 창에서 아래 명령어를 입력해 주피터 노트북을 설치하도록 한다.
-
+(2) 주피터 노트북 설치      
+주피터 노트북을 설치하는 방법은 두 가지가 있다.    
+하나는 cmd 창에서 설치하는 방법이고 하나는 아나콘다를 통해 설치하는 방법이다.   
+아나콘다를 통해 설치하는 방법은 아나콘다도 깔아야 하고 시간이 더 걸리기 때문에   
+여기서는 cmd 창에서 설치하는 방법을 설명하도록 하겠다.    
+<br/>
+윈도우 cmd 창에서 아래 명령어를 입력해 주피터 노트북을 설치하도록 한다.   
+<br/>
 명령어 : pip install jupyter
 <img width="1600" alt="image3" src="https://github.com/user-attachments/assets/c4718cf4-d7b9-4e06-bbcd-4a76bda2acab">
 
 
-(3) 주피터 노트북 경로 설정
-
-설치가 완료되었다면 주피터 노트북 파일이 저장될 경로를 가정 먼저 설정해주어야 한다.
-주피터 노트북을 실행할 때 경로를 입력하지 않으면 현재 경로를 기준으로 실행된다.
-경로를 설정할 때는 아래의 명령어를 사용한다.
-
+(3) 주피터 노트북 경로 설정   
+설치가 완료되었다면 주피터 노트북 파일이 저장될 경로를 가정 먼저 설정해주어야 한다.   
+주피터 노트북을 실행할 때 경로를 입력하지 않으면 현재 경로를 기준으로 실행된다.   
+경로를 설정할 때는 아래의 명령어를 사용한다.   
+<br/>
 명령어 : jupyter notebook
-
-특정 경로를 저장 위치로 설정하고 싶으면 아래와 같이 설정한다.
-경로는 본인이 원하는대로 바꿔줄 수 있다.
-
+<br/>
+특정 경로를 저장 위치로 설정하고 싶으면 아래와 같이 설정한다.   
+경로는 본인이 원하는대로 바꿔줄 수 있다.   
+<br/>
 명령어 : jupyter notebook --notebook-dir='C:\jupyter\notebook'
 <img width="1600" alt="image4" src="https://github.com/user-attachments/assets/4da599f6-4da3-4511-9e92-61ff557b8647">
-
+<br/>
 경로 설정을 하고 나면 얼마 지나지 않아 웹브라우저에서 주피터 노트북이 실행된다.
 <img width="1800" alt="image5" src="https://github.com/user-attachments/assets/f4078b59-2eee-4633-9338-b59da1c9f256">
-
+<br/>
 
 (4) 주피터 노트북 테스트
-
 이제 주피터 노트북을 테스트 해보도록 하겠다.
 "New -> Python 3 (jpykernel)"을 클릭해서 새로운 노트북을 생성한다.
 <img width="1000" alt="image6" src="https://github.com/user-attachments/assets/a2d17ce6-5701-4fe4-9703-84d50842f4ca">
