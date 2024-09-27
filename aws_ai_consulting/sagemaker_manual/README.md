@@ -54,28 +54,31 @@
 명령어 : jupyter notebook --notebook-dir='C:\jupyter\notebook'
 <img width="1600" alt="image4" src="https://github.com/user-attachments/assets/4da599f6-4da3-4511-9e92-61ff557b8647">
 <br/>
+
 경로 설정을 하고 나면 얼마 지나지 않아 웹브라우저에서 주피터 노트북이 실행된다.
 <img width="1800" alt="image5" src="https://github.com/user-attachments/assets/f4078b59-2eee-4633-9338-b59da1c9f256">
 <br/>
 
-(4) 주피터 노트북 테스트
-이제 주피터 노트북을 테스트 해보도록 하겠다.
+(4) 주피터 노트북 테스트   
+이제 주피터 노트북을 테스트 해보도록 하겠다.   
 "New -> Python 3 (jpykernel)"을 클릭해서 새로운 노트북을 생성한다.
 <img width="1000" alt="image6" src="https://github.com/user-attachments/assets/a2d17ce6-5701-4fe4-9703-84d50842f4ca">
+<br/>
 
 ChatGPT 등의 생성형 AI를 통해 주피터 노트북에서 실행할 게임 코드를 알려달라고 하고 주피터 노트북에 코드를 복사하자.
 <img width="800" alt="image7" src="https://github.com/user-attachments/assets/8a4998f9-8b7a-47b6-9b0e-5fbedb44f88e">
 <img width="600" alt="image8" src="https://github.com/user-attachments/assets/3528127f-fbe5-4a60-870e-6b45d5f7893d">
+<br/>
 
 코드를 작성하고 실행할 때는 상단의 Run 버튼을 눌러도 되고, Shift+Enter(=Run)를 누르면 코드가 실행된다.
 <img width="1000" alt="image9" src="https://github.com/user-attachments/assets/6f2a11cb-611f-4c87-805d-553f8c365459">
 <img width="1000" alt="image10" src="https://github.com/user-attachments/assets/4e11ee8b-23c4-4616-a6bc-a8146a1fb6f0">
-
+<br/><br/>
 
 ---
+<br/>
 
-
-[Amazon 세이지메이커(SageMaker) 주피터 노트북 사용]
+## [Amazon 세이지메이커(SageMaker) 주피터 노트북 사용]
 
 Amazon 세이지메이커 노트북 인스턴스는 주피터 노트북 인스턴스를 실행하는 
 완전관리형 기계 학습(ML) EC2 인스턴스이다.
