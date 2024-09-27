@@ -119,7 +119,7 @@ Amazon 세이지메이커 노트북 인스턴스는 주피터 노트북 인스�
 - 서브넷   
 - 보안그룹   
 <img width="800" alt="image2" src="https://github.com/user-attachments/assets/c926edb0-fa04-4415-ba45-1e4a42840ed2">
-<br/>
+<br/><br/>
 
 3. 이제 노트북 인스턴스를 프로비저닝하는 과정을 잠시 기다리도록 하자.    
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/8e695c14-03a0-422c-847d-7c84992853e1">
