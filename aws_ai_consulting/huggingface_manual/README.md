@@ -201,7 +201,5 @@ https://huggingface.co/pricing
       
 6. 허깅페이스 GitHub 리포지토리    
 허깅페이스에서 제공하는 GitHub 리포지토리는 아래 링크에서 확인 가능하다.   
-<br/>
-
 https://github.com/huggingface
 <img width="1800" alt="image16" src="https://github.com/user-attachments/assets/3e0ea123-c4f1-4f5f-9b7d-3b84f36d6c30">
