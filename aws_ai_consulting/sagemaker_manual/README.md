@@ -123,7 +123,7 @@ Amazon 세이지메이커 노트북 인스턴스는 주피터 노트북 인스�
 
 3. 이제 노트북 인스턴스를 프로비저닝하는 과정을 잠시 기다리도록 하자.    
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/8e695c14-03a0-422c-847d-7c84992853e1">
-<br/>
+<br/><br/>
 
 4. 노트북 인스턴스 상태가 "InService"로 바뀌면 주피터나 주피터랩을 실행하면 된다.   
 <img width="1800" alt="image4" src="https://github.com/user-attachments/assets/4da51d1b-4f1c-4b6b-af66-9e815e77d546">
