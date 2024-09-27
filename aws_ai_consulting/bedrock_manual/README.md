@@ -130,9 +130,9 @@ boto3 등의 모듈이 없으면 pip install boto3 명령어로 모듈을 설치
 공유된 앱으로 시작한 다음 이를 리믹스하여 더욱 기능을 향상시킬 수도 있다.   
 <br/>
 
-1. 파티락은 아래 주소에 접속하면 사용할 수 있다.
-파티락 주소 - https://partyrock.aws/ 
-Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
+1. 파티락은 아래 주소에 접속하면 사용할 수 있다.   
+파티락 주소 - https://partyrock.aws/    
+Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.   
 <img width="1800" alt="image1" src="https://github.com/user-attachments/assets/129fcf6d-02e2-45b8-8fb1-1ae889f54f2f">
 <br/><br/>
 
