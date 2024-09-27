@@ -51,7 +51,6 @@
 특정 경로를 저장 위치로 설정하고 싶으면 아래와 같이 설정한다.   
 경로는 본인이 원하는대로 바꿔줄 수 있다.   
 <br/>
-
 명령어 : jupyter notebook --notebook-dir='C:\jupyter\notebook'
 <img width="1600" alt="image4" src="https://github.com/user-attachments/assets/4da599f6-4da3-4511-9e92-61ff557b8647">
 <br/>
