@@ -157,6 +157,7 @@ Apple, Amazon 또는 Google 계정을 사용하여 로그인할 수 있다.
 <img width="1600" alt="image6" src="https://github.com/user-attachments/assets/7878546a-5d3f-40c2-83e9-a0048a054a6c">
 <br/><br/>
 
+
 파티락의 다른 기능들은 아래와 같다.
 <br/><br/>
 
