@@ -278,8 +278,7 @@ python 앞에 !(느낌표)를 붙이면, 명령 프롬프트에서 시스템 명
 모델에 따라서는 허깅페이스 모델 페이지에서 사용 요청을 해야할 수도 있다.   
 <img width="800" alt="image10" src="https://github.com/user-attachments/assets/80e0c9d9-567e-4ebc-8a06-8a5932472bca">
 
-사용이 허락된 모델은 아래 링크에서 확인 가능하다.   
-
+사용이 허락된 모델은 아래 링크에서 확인 가능하다.      
 https://huggingface.co/settings/gated-repos   
 <img width="800" alt="image11" src="https://github.com/user-attachments/assets/9f3691b7-210d-457d-a610-6ed8a4a5796e">
 <br/><br/>
