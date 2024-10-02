@@ -215,67 +215,67 @@ https://github.com/huggingface
 ## 구글 코랩에서 허깅페이스 사용
 <br/>
 
-이제 구글 코랩에서 허깅페이스를 사용해보도록 하자.
+이제 구글 코랩에서 허깅페이스를 사용해보도록 하자. 
 <br/>
     
-1. 허깅페이스에서 Access Token 발급받기   
-(1) 우선 아래 링크에 접속해서 허깅페이스 토큰을 발급받도록 하자.   
-https://huggingface.co/settings/tokens
+1. 허깅페이스에서 Access Token 발급받기      
+(1) 우선 아래 링크에 접속해서 허깅페이스 토큰을 발급받도록 하자.      
+https://huggingface.co/settings/tokens   
 <img width="1000" alt="image1" src="https://github.com/user-attachments/assets/2edc5e10-7876-4f7c-b02c-cc722c8bc00f">
 <br/>
 
-(2) 토큰 이름은 자유롭게 정하면 되고 권한은 "Read"를 선택한다.
+(2) 토큰 이름은 자유롭게 정하면 되고 권한은 "Read"를 선택한다.   
 <img width="1000" alt="image2" src="https://github.com/user-attachments/assets/6a819b36-46fd-4a8b-b57b-d71fb3ad95f0">
 <br/>
          
-2. 구글 코랩 환경 구성 
-(1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 치된 환경이 필요하다.   
-구글이 만들어 놓은 코랩을 사용하면 파이썬으로 코딩을 할 수 있다.   
-https://colab.research.google.com/?hl=ko   
+2. 구글 코랩 환경 구성    
+(1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 치된 환경이 필요하다.      
+구글이 만들어 놓은 코랩을 사용하면 파이썬으로 코딩을 할 수 있다.      
+https://colab.research.google.com/?hl=ko      
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/cf343e66-a9db-4483-bd18-a7fb98c25f88">
 <br/>
 
-(2) 우선 구글 계정으로 로그인 하면 계정 정보 옆에 네모 표시가 나타난다.
-하위 메뉴에서 "드라이브"를 선택해준다.
+(2) 우선 구글 계정으로 로그인 하면 계정 정보 옆에 네모 표시가 나타난다.   
+하위 메뉴에서 "드라이브"를 선택해준다.   
 ![image4](https://github.com/user-attachments/assets/e321da5c-c18f-4bef-8a5f-04decc61e371)
 <br/>
     
-(3) 드라이브 왼쪽 상단에 "+ New" 버튼을 누르면, 드라이브에서 사용할 수 있는 기능이 나오는데
-"더보기" 버튼을 눌러 "Google Colaboratory"를 클릭한다. 
-만약 "Google Colaboratory" 메뉴가 보이지 않으면 이 앱을 추가해줘야 한다.
-"연결할 앱 더보기" 버튼을 클릭한다.
-"Colaboratory"를 검색한 후 설치를 진행한다.
+(3) 드라이브 왼쪽 상단에 "+ New" 버튼을 누르면, 드라이브에서 사용할 수 있는 기능이 나오는데   
+"더보기" 버튼을 눌러 "Google Colaboratory"를 클릭한다.    
+만약 "Google Colaboratory" 메뉴가 보이지 않으면 이 앱을 추가해줘야 한다.   
+"연결할 앱 더보기" 버튼을 클릭한다.   
+"Colaboratory"를 검색한 후 설치를 진행한다.   
 <img width="1000" alt="image5" src="https://github.com/user-attachments/assets/9940d2d9-388d-4932-9993-8539a9c243fa">
 <br/>
     
-(4) 이제 다시 코랩 웹페이지로 돌아가서 새 노트를 만들어보자.
-https://colab.research.google.com/?hl=ko
-이제 파이썬 코드를 작성해서 실행할 수 있는 환경이 마련되었다.
-로컬 PC에 파이썬이 설치된 것은 아니고 가공간에 파이썬을 설치하고 사용권한을 받은 것이다.
+(4) 이제 다시 코랩 웹페이지로 돌아가서 새 노트를 만들어보자.   
+https://colab.research.google.com/?hl=ko   
+이제 파이썬 코드를 작성해서 실행할 수 있는 환경이 마련되었다.   
+로컬 PC에 파이썬이 설치된 것은 아니고 가공간에 파이썬을 설치하고 사용권한을 받은 것이다.   
 <img width="1800" alt="image6" src="https://github.com/user-attachments/assets/b206185d-e5c6-4701-ad25-0096cb24699c">
 <br/>
            
-(5) hello world! 출력하기
-코 노트에 아래 문구를 입력하고 실행해보자.
-코드 : print("hello world")
+(5) hello world! 출력하기   
+코 노트에 아래 문구를 입력하고 실행해보자.   
+코드 : print("hello world")   
 <img width="500" alt="image7" src="https://github.com/user-attachments/assets/a5cbdab9-2e96-41e6-8c38-34842d45f36c">
 <br/>
 
-(6) 코랩 파이썬 버전 확인하기
-아래 명령어로 코랩의 파이썬 버전을 확인해보자.
-python 앞에 !(느낌표)를 붙이면, 명령 프롬프트에서 시스템 명령어를 실행하는 것과 동일하다.
-코드 : !python --version
+(6) 코랩 파이썬 버전 확인하기   
+아래 명령어로 코랩의 파이썬 버전을 확인해보자.    
+python 앞에 !(느낌표)를 붙이면, 명령 프롬프트에서 시스템 명령어를 실행하는 것과 동일하다.   
+코드 : !python --version   
 <img width="400" alt="image8" src="https://github.com/user-attachments/assets/8fdb3285-3156-40e1-b74a-bcb19040a3b8">
 <br/>
 
-3. 구글 코랩에서 허깅페이스 사용하기   
-(1) 우선 구글 코랩의 런타임 유형을 "T4 GPU"로 바꾸도록 한다.
+3. 구글 코랩에서 허깅페이스 사용하기      
+(1) 우선 구글 코랩의 런타임 유형을 "T4 GPU"로 바꾸도록 한다.   
 <img width="500" alt="image9" src="https://github.com/user-attachments/assets/752e75fe-1e9a-4445-bf80-707aa8efac0a">
 <br/>
     
-(2) 구글 코랩에서 아래 코드를 입력하고 실행해보자.
-만약 코드에 기입된 모델이 더 이상 지원이 안 되면 다른 모델로 바꾸도록 하자.
-모델에 따라서는 허깅페이스 모델 페이지에서 사용 요청을 해야할 수도 있다.
+(2) 구글 코랩에서 아래 코드를 입력하고 실행해보자.   
+만약 코드에 기입된 모델이 더 이상 지원이 안 되면 다른 모델로 바꾸도록 하자.   
+모델에 따라서는 허깅페이스 모델 페이지에서 사용 요청을 해야할 수도 있다.   
 <img width="800" alt="image10" src="https://github.com/user-attachments/assets/80e0c9d9-567e-4ebc-8a06-8a5932472bca">
 
 사용이 허락된 모델은 아래 링크에서 확인 가능하다.
@@ -389,8 +389,8 @@ except Exception as e:
 ```
 <br/>
 
-(3) 모델과 instruction에 따라서 시간이 다소 걸릴 수도 있으니 30분 정도는 기다려보자.
-아래와 같이 답변이 출력되면 정상적으로 코드가 실행된 것이다. 
+(3) 모델과 instruction에 따라서 시간이 다소 걸릴 수도 있으니 30분 정도는 기다려보자.   
+아래와 같이 답변이 출력되면 정상적으로 코드가 실행된 것이다.    
 <img width="800" alt="image12" src="https://github.com/user-attachments/assets/be2727b4-cca4-43ab-a7d1-3fcaad75a630">
 <br/><br/>
 
