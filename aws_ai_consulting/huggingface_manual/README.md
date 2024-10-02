@@ -231,7 +231,7 @@ https://huggingface.co/settings/tokens
          
 2. 구글 코랩 환경 구성
 <br/>    
-(1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 치된 환경이 필요하다.      
+(1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 설설치된 환경이 필요하다.      
 구글이 만들어 놓은 코랩을 사용하면 파이썬으로 코딩을 할 수 있다.      
 https://colab.research.google.com/?hl=ko      
 <img width="1800" alt="image3" src="https://github.com/user-attachments/assets/cf343e66-a9db-4483-bd18-a7fb98c25f88">
@@ -273,7 +273,7 @@ python 앞에 !(느낌표)를 붙이면, 명령 프롬프트에서 시스템 명
 3. 구글 코랩에서 허깅페이스 사용하기
 <br/>
 (1) 우선 구글 코랩의 런타임 유형을 "T4 GPU"로 바꾸도록 한다.
- 
+<br/> 
 <img width="500" alt="image9" src="https://github.com/user-attachments/assets/752e75fe-1e9a-4445-bf80-707aa8efac0a">
 <br/><br/>
     
