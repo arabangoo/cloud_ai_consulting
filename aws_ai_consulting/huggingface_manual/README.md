@@ -218,7 +218,8 @@ https://github.com/huggingface
 이제 구글 코랩에서 허깅페이스를 사용해보도록 하자. 
 <br/>
     
-1. 허깅페이스에서 Access Token 발급받기      
+1. 허깅페이스에서 Access Token 발급받기
+<br/>
 (1) 우선 아래 링크에 접속해서 허깅페이스 토큰을 발급받도록 하자.      
 https://huggingface.co/settings/tokens   
 <img width="1000" alt="image1" src="https://github.com/user-attachments/assets/2edc5e10-7876-4f7c-b02c-cc722c8bc00f">
@@ -228,7 +229,8 @@ https://huggingface.co/settings/tokens
 <img width="1000" alt="image2" src="https://github.com/user-attachments/assets/6a819b36-46fd-4a8b-b57b-d71fb3ad95f0">
 <br/><br/>
          
-2. 구글 코랩 환경 구성    
+2. 구글 코랩 환경 구성
+<br/>    
 (1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 치된 환경이 필요하다.      
 구글이 만들어 놓은 코랩을 사용하면 파이썬으로 코딩을 할 수 있다.      
 https://colab.research.google.com/?hl=ko      
@@ -268,7 +270,8 @@ python 앞에 !(느낌표)를 붙이면, 명령 프롬프트에서 시스템 명
 <img width="400" alt="image8" src="https://github.com/user-attachments/assets/8fdb3285-3156-40e1-b74a-bcb19040a3b8">
 <br/><br/>
 
-3. 구글 코랩에서 허깅페이스 사용하기      
+3. 구글 코랩에서 허깅페이스 사용하기
+<br/>
 (1) 우선 구글 코랩의 런타임 유형을 "T4 GPU"로 바꾸도록 한다.   
 <img width="500" alt="image9" src="https://github.com/user-attachments/assets/752e75fe-1e9a-4445-bf80-707aa8efac0a">
 <br/><br/>
