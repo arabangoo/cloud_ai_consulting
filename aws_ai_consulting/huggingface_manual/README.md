@@ -532,49 +532,51 @@ https://aws.amazon.com/ko/ec2/instance-types/g4/
 ![image3](https://github.com/user-attachments/assets/f1e0d3e1-3ed6-4b35-90ff-6380e48d76f8)   
 <br/>
        
-(2) 가능한 "Nvidia Driver AMI GPU PyTorch" 문구가 들어가 있는 AMI로 서버를 생성하자.   
-서버에서 AI/ML 서비스를 실행할 때 호환성 문제를 최소화할 수 있다.   
+(2) 가능한 "Nvidia Driver AMI GPU PyTorch" 문구가 들어가 있는 AMI로 서버를 생성하자.       
+서버에서 AI/ML 서비스를 실행할 때 호환성 문제를 최소화할 수 있다.       
+![image4](https://github.com/user-attachments/assets/bae3efa9-7ad6-498b-8873-50d215b8424a)
 <br/>
 
-2. EC2 서버에서 허깅페이스 환경 구성   
-(1) 이제 서버에 접속하여 Nvidia 드라이버 버전과 CUDA 버전을 확인하자.   
-CUDA는 NVIDIA에서 개발한 병렬 컴퓨팅 플랫폼이자 프로그래밍 모델로    
-GPU를 사용하여 복잡한 계산을 가속화할 수 있게 해주는 기술이다.   
-Nvidia 칩셋으로 딥러닝할 때 PyTorch와 GPU 가속을 위해 필수다.   
+2. EC2 서버에서 허깅페이스 환경 구성      
+(1) 이제 서버에 접속하여 Nvidia 드라이버 버전과 CUDA 버전을 확인하자.      
+CUDA는 NVIDIA에서 개발한 병렬 컴퓨팅 플랫폼이자 프로그래밍 모델로       
+GPU를 사용하여 복잡한 계산을 가속화할 수 있게 해주는 기술이다.      
+Nvidia 칩셋으로 딥러닝할 때 PyTorch와 GPU 가속을 위해 필수다.      
 명령어 : nvidia-smi   
+![image5](https://github.com/user-attachments/assets/7ee5129b-7b68-4624-af72-1dabeaec2b6f)  
 <br/>
 
-(2) 다음은 아래 순서대로 명령어를 실행하여 pip 최신 버전을 설치하고 업데이트를 하자.   
-명령어 (1) : apt update   
-명령어 (2) : apt install -y python3-pip   
-명령어 (3) : pip install --upgrade pip   
+(2) 다음은 아래 순서대로 명령어를 실행하여 pip 최신 버전을 설치하고 업데이트를 하자.         
+명령어 (1) : apt update         
+명령어 (2) : apt install -y python3-pip         
+명령어 (3) : pip install --upgrade pip         
 <br/>
 
-(3) 다음은 아래 명령어로 GPU 가속을 위한 CUDA 지원이 포함된 PyTorch를 설치한다.   
-반드시 GPU 가속을 위한 CUDA 지원 버전의 PyTorch를 설치해야 한다.   
-명령어 : pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117   
+(3) 다음은 아래 명령어로 GPU 가속을 위한 CUDA 지원이 포함된 PyTorch를 설치한다.      
+반드시 GPU 가속을 위한 CUDA 지원 버전의 PyTorch를 설치해야 한다.      
+명령어 : pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117      
 <br/>
 
-(4) GPU 가속을 위한 PyTorch가 정상적으로 설치되었는지 확인하기 위해    
-아래와 같이 명령어를 실행한 후 Python 인터프리터에서 코드를 실행하자.   
-명령어 : python3   
+(4) GPU 가속을 위한 PyTorch가 정상적으로 설치되었는지 확인하기 위해       
+아래와 같이 명령어를 실행한 후 Python 인터프리터에서 코드를 실행하자.      
+명령어 : python3      
 <br/>
 
-Python 환경에서 아래 코드를 실행하면 된다.   
+Python 환경에서 아래 코드를 실행하면 된다.      
 <br/>
 
-코드 (1) : import torch   
-코드 (2) : print(torch.cuda.is_available())     
-- GPU가 사용 가능한지 확인. True를 반환하면 GPU를 사용한 PyTorch 가속이 가능하다는 뜻이다.   
-코드 (3) : print(torch.cuda.device_count())     
-- 사용 가능한 GPU의 수. 1 이상이 반환되면 GPU를 인식하고 있다는 의미다.   
-코드 (4) : print(torch.cuda.current_device())     
-- 현재 사용 중인 GPU ID 확인.    
-코드 (5) : print(torch.cuda.get_device_name(torch.cuda.current_device()))    
-- 현재 사용 중인 GPU 이름 반환. 예를 들어 Tesla T4 같은 결과를 볼 수 있다.   
+코드 (1) : import torch       
+코드 (2) : print(torch.cuda.is_available())        
+- GPU가 사용 가능한지 확인. True를 반환하면 GPU를 사용한 PyTorch 가속이 가능하다는 뜻이다.      
+코드 (3) : print(torch.cuda.device_count())        
+- 사용 가능한 GPU의 수. 1 이상이 반환되면 GPU를 인식하고 있다는 의미다.       
+코드 (4) : print(torch.cuda.current_device())        
+- 현재 사용 중인 GPU ID 확인.        
+코드 (5) : print(torch.cuda.get_device_name(torch.cuda.current_device()))       
+- 현재 사용 중인 GPU 이름 반환. 예를 들어 Tesla T4 같은 결과를 볼 수 있다.      
 <br/>
 
-아래와 같은 결과가 출력되면 PyTorch가 GPU를 정상적으로 인식하고 있는 것이다.   
+아래와 같은 결과가 출력되면 PyTorch가 GPU를 정상적으로 인식하고 있는 것이다.      
 <br/>
 
 True   
@@ -583,23 +585,24 @@ True
 Tesla T4   
 <br/>
 
-GPU 가속 상태 확인이 끝나면 아래 명령어로 python 인터프리터를 나온다.   
+GPU 가속 상태 확인이 끝나면 아래 명령어로 python 인터프리터를 나온다.      
 코드 : exit()   
 <br/>
 
-(5) 끝으로 허깅페이스 모델을 다루기 위해 transformers, accelerate, datasets 패키지를 설치한다.   
-허깅페이스 라이브러리까지 설치하면 허깅페이스에서 모델을 호출하기 위한 준비가 완료되는 것이다.   
-명령어 : pip install transformers datasets accelerate   
+(5) 끝으로 허깅페이스 모델을 다루기 위해 transformers, accelerate, datasets 패키지를 설치한다.      
+허깅페이스 라이브러리까지 설치하면 허깅페이스에서 모델을 호출하기 위한 준비가 완료되는 것이다.      
+명령어 : pip install transformers datasets accelerate      
 <br/>
 
-3. 허깅페이스에서 모델 호출 테스트   
-(1) CLI로 Hugging Face에 로그인하도록 하자.    
-그러면 이후에는 자동으로 API 토큰이 인증된다.   
-명령어 : huggingface-cli login   
+3. 허깅페이스에서 모델 호출 테스트      
+(1) CLI로 Hugging Face에 로그인하도록 하자.       
+그러면 이후에는 자동으로 API 토큰이 인증된다.      
+명령어 : huggingface-cli login
+![image6](https://github.com/user-attachments/assets/7e004178-4a8e-4885-a819-7a3325109b80)     
 <br/>
 
-(2) vi 편집기 등을 사용하여 허깅페이스 모델 호출 테스트를 위한 스크립트를 작성한다.   
-명령어 : vi huggingface_test.py   
+(2) vi 편집기 등을 사용하여 허깅페이스 모델 호출 테스트를 위한 스크립트(huggingface_test.py)를 작성한다.      
+명령어 : vi huggingface_test.py       
 <br/>
 
 ```python
@@ -652,9 +655,11 @@ for output in outputs:
 ```
 <br/>
 
-(3) 아래 명령어로 스크립트를 실행한다.   
-명령어 : python3 huggingface_test.py   
+(3) 아래 명령어로 스크립트를 실행한다.      
+명령어 : python3 huggingface_test.py 
+![image7](https://github.com/user-attachments/assets/3e091fe5-a215-49c0-b05d-e2d698fef77d)
 <br/>
         
-(4) EC2 서버 초기 환경에서는 영어로 질문을 해야 더 정확한 답변을 받을 수 있다.    
+(4) EC2 서버 초기 환경에서는 영어로 질문을 해야 더 정확한 답변을 받을 수 있다.
+![image8](https://github.com/user-attachments/assets/7cab37a9-5cdf-451c-a336-90c899cb1573)
 <br/>
