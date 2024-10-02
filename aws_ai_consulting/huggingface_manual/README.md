@@ -232,7 +232,7 @@ https://huggingface.co/settings/tokens
          
 2. 구글 코랩 환경 구성
 <br/>    
-(1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 설치된 환경이 필요하다.         
+(1) 딥러닝 Open API를 사용하려면 코딩이 필요한데, 코딩을 하려면 파이썬이 설치된 환경이 필요하다.               
 구글이 만들어 놓은 코랩을 사용하면 파이썬으로 코딩을 할 수 있다.
 <br/>       
 https://colab.research.google.com/?hl=ko      
