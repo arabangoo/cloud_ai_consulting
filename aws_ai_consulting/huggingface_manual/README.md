@@ -404,3 +404,89 @@ except Exception as e:
 ---
 <br/>
 
+## Amazon SageMaker에서 허깅페이스 사용      
+<br/>
+
+(1) AWS 콘솔에서 오레곤 리전의 Amazon 세이지메이커 서비스에 들어간다.      
+그 후, "Notebooks" 항목을 클릭한다.          
+<img width="1800" alt="image1" src="https://github.com/user-attachments/assets/aa2210bf-d37d-48c8-85d3-6772ec49fd09">
+<br/>
+        
+(2) 노트북 인스턴스 이름과 유형, 볼륨 크기, 권한, 네트워크를 지정해주자.   
+이번 테스트에는 ml.m5.2xlarge 정도의 인스턴스 타입을 사용하겠다.   
+![image2](https://github.com/user-attachments/assets/f2637f03-d808-4ff1-a151-783e4dc628c4)
+<br/>    
+                    
+(3) 노트북 인스턴스 상태가 "InService"로 바뀌면 주피터나 주피터랩을 실행하면 된다.
+![image3](https://github.com/user-attachments/assets/be3d220a-e008-4c88-a2fa-bcb60030d166)
+<br/>
+             
+(4) Jupyter를 열고 New를 클릭하면 여러 가지 항목들이 보인다.    
+일단 테스트를 위해서는 conda_python3를 클릭해보자.    
+![image4](https://github.com/user-attachments/assets/16c5bef8-34ad-41f7-adf6-269ca0d444dd)
+<br/>
+        
+(5) 제일 먼저 아래 명령어를 순서대로 실행해준다.    
+명령어 (1) : pip install torch    
+명령어 (2) : pip install transformers  
+<br/>
+
+(6) 노트가 열리면 아래의 코드를 복사한 후 실행한다.
+구글 코랩에서 사용했던 코드와는 내용이 다르니 반드시 아래의 코드를 사용한다.
+"Hugging Face 토큰" 부분에는 허깅페이스에서 발급받은 토큰을 기입한다.    
+<br/>
+
+```python
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from huggingface_hub import login
+
+# Hugging Face 토큰으로 로그인
+login(token="Hugging Face 토큰")
+
+# 사용할 모델 ID (Meta Llama 3.1-8B)
+model_id = "meta-llama/Meta-Llama-3.1-8B"
+
+# 토크나이저와 모델 로드 (float16으로 메모리 절약)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype="auto")
+
+# 텍스트 생성 파이프라인 생성
+generator = pipeline("text-generation", model=model, tokenizer=tokenizer)
+
+# 입력 프롬프트에 따라 언어 설정 (한국어면 한국어로 답변)
+def get_prompt_language(prompt):
+    if any(char.isalpha() for char in prompt) and not any('\u3131' <= char <= '\uD79D' for char in prompt):
+        return "English"  # 영어 프롬프트
+    return "Korean"  # 한국어 프롬프트
+
+# 프롬프트 설정
+prompt = input("질문을 입력하세요: ")
+
+# 한국어 질문인 경우 한국어로 답변하도록 프롬프트 변경
+language = get_prompt_language(prompt)
+if language == "Korean":
+    prompt = "한국에서 대표적인 관광지 5곳을 추천해주세요."
+
+# 텍스트 생성 (반복 방지를 위해 temperature, top_p, repetition_penalty 설정)
+outputs = generator(
+    prompt, 
+    max_length=2000,                 # 더 짧게 제한
+    num_return_sequences=1,         # 한 번에 1개의 텍스트 생성
+    temperature=0.7,                # 무작위성 추가
+    top_p=0.9,                      # 상위 90% 확률 토큰들만 사용
+    repetition_penalty=1.2          # 동일한 단어의 반복을 억제
+)
+
+# 생성된 텍스트 출력
+print("Generated text:")
+for output in outputs:
+    print(output["generated_text"])
+```
+<br/>
+    
+(7) 질문창이 열리면 질문을 입력한다. 잠시 기다리면 답변이 출력된다.   
+답변이 출력되면 일단 SageMaker에서의 테스트도 완료다.   
+![image5](https://github.com/user-attachments/assets/568f5d16-a9ff-49d9-a4d6-9293622e415c)
+
+   
