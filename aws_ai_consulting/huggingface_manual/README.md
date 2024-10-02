@@ -521,7 +521,9 @@ EC2 인스턴스 내의 로컬 자원으로 모델을 불러와 실행할 수 �
 ![image1](https://github.com/user-attachments/assets/c0003641-0c38-4950-bfbb-d0a33c0a34b9)
 <br/><br/>
              
-1. 허깅페이스 AMI로 EC2 인스턴스 생성   
+1. 허깅페이스 AMI로 EC2 인스턴스 생성
+<br/>
+    
 (1) EC2 인스턴스는 엔비디아 GPU 칩셋이 달린 g4dn.8xlarge 타입으로 생성한다.   
 g4dn.8xlarge 타입이 사용 불가면 Service Quotas에서 신청한다.   
 Service Quotas에서는 vCPU 기반으로 신청하기 때문에 g4dn.8xlarge를 사용하려면 32정도를 신청해야 한다.   
