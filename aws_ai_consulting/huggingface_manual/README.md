@@ -220,7 +220,8 @@ https://github.com/huggingface
     
 1. 허깅페이스에서 Access Token 발급받기
 <br/>
-(1) 우선 아래 링크에 접속해서 허깅페이스 토큰을 발급받도록 하자.      
+(1) 우선 아래 링크에 접속해서 허깅페이스 토큰을 발급받도록 하자.
+<br/>    
 https://huggingface.co/settings/tokens   
 <img width="1000" alt="image1" src="https://github.com/user-attachments/assets/2edc5e10-7876-4f7c-b02c-cc722c8bc00f">
 <br/><br/>
