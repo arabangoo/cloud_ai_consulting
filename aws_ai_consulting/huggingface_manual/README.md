@@ -535,11 +535,10 @@ https://aws.amazon.com/ko/ec2/instance-types/g4/
 (2) 가능한 "Nvidia Driver AMI GPU PyTorch" 문구가 들어가 있는 AMI로 서버를 생성하자.       
 서버에서 AI/ML 서비스를 실행할 때 호환성 문제를 최소화할 수 있다.       
 ![image4](https://github.com/user-attachments/assets/bae3efa9-7ad6-498b-8873-50d215b8424a)
-<br/>
+<br/><br/>
 
 2. EC2 서버에서 허깅페이스 환경 구성
-<br/>
-        
+<br/>        
 (1) 이제 서버에 접속하여 Nvidia 드라이버 버전과 CUDA 버전을 확인하자.      
 CUDA는 NVIDIA에서 개발한 병렬 컴퓨팅 플랫폼이자 프로그래밍 모델로       
 GPU를 사용하여 복잡한 계산을 가속화할 수 있게 해주는 기술이다.      
