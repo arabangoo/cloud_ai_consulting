@@ -430,7 +430,6 @@ except Exception as e:
 명령어 (1) : pip install torch    
 명령어 (2) : pip install transformers  
 <br/>
-
 (6) 노트가 열리면 아래의 코드를 복사한 후 실행한다.
 구글 코랩에서 사용했던 코드와는 내용이 다르니 반드시 아래의 코드를 사용한다.
 "Hugging Face 토큰" 부분에는 허깅페이스에서 발급받은 토큰을 기입한다.    
