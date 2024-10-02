@@ -487,5 +487,173 @@ for output in outputs:
 (7) 질문창이 열리면 질문을 입력한다. 잠시 기다리면 답변이 출력된다.   
 답변이 출력되면 일단 SageMaker에서의 테스트도 완료다.   
 ![image5](https://github.com/user-attachments/assets/568f5d16-a9ff-49d9-a4d6-9293622e415c)
+<br/><br/>
 
+---
+<br/>
+
+## Amazon EC2에서 허깅페이스 사용      
+<br/>
    
+허깅페이스를 이용해 EC2에서 아래와 같은 환경을 구성할 수도 있다.
+<br/>
+
+Hugging Face 모델이 한 번 로컬(EC2 인스턴스)에 다운로드되면    
+이후에는 Hugging Face 사이트와 통신하지 않고 EC2 인스턴스 내의 로컬 캐시에서 모델을 불러와 실행할 수 있다.    
+즉, 모델이 로컬에 저장된 후에는 네트워크 연결 없이 로컬 자원만으로도 모델을 실행할 수 있다.   
+<br/>
+
+(1) 로컬 캐시에 저장 :   
+모델 파일, 토크나이저 파일, 구성 파일이 로컬 캐시(~/.cache/huggingface/transformers)에 저장된다.   
+같은 모델을 다시 호출할 때는, Hugging Face 사이트에 재연결하지 않고 로컬 캐시에서 해당 모델 파일을 불러온다.   
+<br/>
+
+(2) 네트워크 연결이 불필요 :   
+모델이 캐시에 저장된 후에는 Hugging Face 서버와 다시 통신할 필요가 없다.    
+EC2 인스턴스 내의 로컬 자원으로 모델을 불러와 실행할 수 있다.   
+이렇게 하면 네트워크 연결 상태와 무관하게 모델을 사용할 수 있다.   
+<br/>
+
+(3) 성능 향상 :
+로컬 캐시에서 모델을 불러오기 때문에 네트워크 속도에 의존하지 않고, 매우 빠르게 모델을 실행할 수 있다.      
+네트워크 트래픽을 줄이고, 인터넷 연결 없이도 모델을 계속 사용할 수 있는 장점이 있다.      
+<br/>
+![image1](https://github.com/user-attachments/assets/c0003641-0c38-4950-bfbb-d0a33c0a34b9)
+<br/><br/>
+             
+1. 허깅페이스 AMI로 EC2 인스턴스 생성   
+(1) EC2 인스턴스는 엔비디아 GPU 칩셋이 달린 g4dn.8xlarge 타입으로 생성한다.   
+g4dn.8xlarge 타입이 사용 불가면 Service Quotas에서 신청한다.   
+Service Quotas에서는 vCPU 기반으로 신청하기 때문에 g4dn.8xlarge를 사용하려면 32정도를 신청해야 한다.   
+https://aws.amazon.com/ko/ec2/instance-types/g4/   
+<br/>
+![image2](https://github.com/user-attachments/assets/72df5d9f-aaf4-4029-b4eb-64aebfaac52e)
+![image3](https://github.com/user-attachments/assets/1ef765c6-eab4-4975-8216-fa9fac766df4)
+<br/>
+       
+(2) 가능한 "Nvidia Driver AMI GPU PyTorch" 문구가 들어가 있는 AMI로 서버를 생성하자.   
+서버에서 AI/ML 서비스를 실행할 때 호환성 문제를 최소화할 수 있다.   
+<br/>
+
+2. EC2 서버에서 허깅페이스 환경 구성   
+(1) 이제 서버에 접속하여 Nvidia 드라이버 버전과 CUDA 버전을 확인하자.   
+CUDA는 NVIDIA에서 개발한 병렬 컴퓨팅 플랫폼이자 프로그래밍 모델로    
+GPU를 사용하여 복잡한 계산을 가속화할 수 있게 해주는 기술이다.   
+Nvidia 칩셋으로 딥러닝할 때 PyTorch와 GPU 가속을 위해 필수다.   
+명령어 : nvidia-smi   
+<br/>
+
+(2) 다음은 아래 순서대로 명령어를 실행하여 pip 최신 버전을 설치하고 업데이트를 하자.   
+명령어 (1) : apt update   
+명령어 (2) : apt install -y python3-pip   
+명령어 (3) : pip install --upgrade pip   
+<br/>
+
+(3) 다음은 아래 명령어로 GPU 가속을 위한 CUDA 지원이 포함된 PyTorch를 설치한다.   
+반드시 GPU 가속을 위한 CUDA 지원 버전의 PyTorch를 설치해야 한다.   
+명령어 : pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117   
+<br/>
+
+(4) GPU 가속을 위한 PyTorch가 정상적으로 설치되었는지 확인하기 위해    
+아래와 같이 명령어를 실행한 후 Python 인터프리터에서 코드를 실행하자.   
+명령어 : python3   
+<br/>
+
+Python 환경에서 아래 코드를 실행하면 된다.   
+<br/>
+
+코드 (1) : import torch   
+코드 (2) : print(torch.cuda.is_available())     
+- GPU가 사용 가능한지 확인. True를 반환하면 GPU를 사용한 PyTorch 가속이 가능하다는 뜻이다.   
+코드 (3) : print(torch.cuda.device_count())     
+- 사용 가능한 GPU의 수. 1 이상이 반환되면 GPU를 인식하고 있다는 의미다.   
+코드 (4) : print(torch.cuda.current_device())     
+- 현재 사용 중인 GPU ID 확인.    
+코드 (5) : print(torch.cuda.get_device_name(torch.cuda.current_device()))    
+- 현재 사용 중인 GPU 이름 반환. 예를 들어 Tesla T4 같은 결과를 볼 수 있다.   
+<br/>
+
+아래와 같은 결과가 출력되면 PyTorch가 GPU를 정상적으로 인식하고 있는 것이다.   
+<br/>
+
+True   
+1   
+0   
+Tesla T4   
+<br/>
+
+GPU 가속 상태 확인이 끝나면 아래 명령어로 python 인터프리터를 나온다.   
+코드 : exit()   
+<br/>
+
+(5) 끝으로 허깅페이스 모델을 다루기 위해 transformers, accelerate, datasets 패키지를 설치한다.   
+허깅페이스 라이브러리까지 설치하면 허깅페이스에서 모델을 호출하기 위한 준비가 완료되는 것이다.   
+명령어 : pip install transformers datasets accelerate   
+<br/>
+
+3. 허깅페이스에서 모델 호출 테스트   
+(1) CLI로 Hugging Face에 로그인하도록 하자.    
+그러면 이후에는 자동으로 API 토큰이 인증된다.   
+명령어 : huggingface-cli login   
+<br/>
+
+(2) vi 편집기 등을 사용하여 허깅페이스 모델 호출 테스트를 위한 스크립트를 작성한다.   
+명령어 : vi huggingface_test.py   
+<br/>
+
+```python
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+
+# 사용할 모델 ID (Meta Llama 3.1-8B)
+model_id = "meta-llama/Meta-Llama-3.1-8B"
+
+# 토크나이저와 모델 로드 (float16으로 메모리 절약)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16, device_map="auto")
+
+# 텍스트 생성 파이프라인 생성 
+generator = pipeline("text-generation", model=model, tokenizer=tokenizer)
+
+# 입력 프롬프트에 따라 언어 설정 (한국어면 한국어로 답변)
+def get_prompt_language(prompt):
+    if any(char.isalpha() for char in prompt) and not any('\u3131' <= char <= '\uD79D' for char in prompt):
+        return "English"  # 영어 프롬프트
+    return "Korean"  # 한국어 프롬프트
+
+# 프롬프트 설정
+prompt = input("질문을 입력하세요: ")
+
+# 한국어 질문인 경우 한국어로 답변하도록 프롬프트 변경
+language = get_prompt_language(prompt)
+if language == "Korean":
+    prompt = f"다음 질문에 한국어로 답변해주세요: {prompt}"
+else:
+    prompt = f"Please answer the following question in English: {prompt}"
+
+# 텍스트 생성 (반복 방지를 위해 temperature, top_p, repetition_penalty 설정)
+outputs = generator(
+    prompt, 
+    max_length=2000,                 # 더 짧게 제한
+    num_return_sequences=1,          # 한 번에 1개의 텍스트 생성
+    temperature=0.7,                 # 무작위성 추가
+    top_p=0.9,                       # 상위 90% 확률 토큰들만 사용
+    repetition_penalty=1.2,          # 동일한 단어의 반복을 억제
+    do_sample=True,                  # 샘플링 활성화
+    truncation=True,                 # 입력 텍스트 자동 자르기
+    pad_token_id=tokenizer.eos_token_id  # 패딩 토큰 설정
+)
+
+# 생성된 텍스트 출력
+print("Generated text:")
+for output in outputs:
+    print(output["generated_text"])    
+```
+<br/>
+
+(3) 아래 명령어로 스크립트를 실행한다.   
+명령어 : python3 huggingface_test.py   
+<br/>
+        
+(4) EC2 서버 초기 환경에서는 영어로 질문을 해야 더 정확한 답변을 받을 수 있다.    
+<br/>
