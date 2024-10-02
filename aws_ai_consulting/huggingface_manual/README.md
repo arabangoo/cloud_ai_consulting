@@ -537,7 +537,9 @@ https://aws.amazon.com/ko/ec2/instance-types/g4/
 ![image4](https://github.com/user-attachments/assets/bae3efa9-7ad6-498b-8873-50d215b8424a)
 <br/>
 
-2. EC2 서버에서 허깅페이스 환경 구성      
+2. EC2 서버에서 허깅페이스 환경 구성
+<br/>
+        
 (1) 이제 서버에 접속하여 Nvidia 드라이버 버전과 CUDA 버전을 확인하자.      
 CUDA는 NVIDIA에서 개발한 병렬 컴퓨팅 플랫폼이자 프로그래밍 모델로       
 GPU를 사용하여 복잡한 계산을 가속화할 수 있게 해주는 기술이다.      
@@ -594,7 +596,9 @@ GPU 가속 상태 확인이 끝나면 아래 명령어로 python 인터프리터
 명령어 : pip install transformers datasets accelerate      
 <br/>
 
-3. 허깅페이스에서 모델 호출 테스트      
+3. 허깅페이스에서 모델 호출 테스트
+<br/>
+        
 (1) CLI로 Hugging Face에 로그인하도록 하자.       
 그러면 이후에는 자동으로 API 토큰이 인증된다.      
 명령어 : huggingface-cli login
