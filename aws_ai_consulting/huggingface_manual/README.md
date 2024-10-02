@@ -567,15 +567,18 @@ Nvidia 칩셋으로 딥러닝할 때 PyTorch와 GPU 가속을 위해 필수다.
 Python 환경에서 아래 코드를 실행하면 된다.      
 <br/>
 
-코드 (1) : import torch       
-코드 (2) : print(torch.cuda.is_available())        
-- GPU가 사용 가능한지 확인. True를 반환하면 GPU를 사용한 PyTorch 가속이 가능하다는 뜻이다.      
-코드 (3) : print(torch.cuda.device_count())        
-- 사용 가능한 GPU의 수. 1 이상이 반환되면 GPU를 인식하고 있다는 의미다.       
-코드 (4) : print(torch.cuda.current_device())        
-- 현재 사용 중인 GPU ID 확인.        
-코드 (5) : print(torch.cuda.get_device_name(torch.cuda.current_device()))       
-- 현재 사용 중인 GPU 이름 반환. 예를 들어 Tesla T4 같은 결과를 볼 수 있다.      
+코드 (1) : import torch          
+코드 (2) : print(torch.cuda.is_available())           
+- GPU가 사용 가능한지 확인. True를 반환하면 GPU를 사용한 PyTorch 가속이 가능하다는 뜻이다.
+<br/>       
+코드 (3) : print(torch.cuda.device_count())           
+- 사용 가능한 GPU의 수. 1 이상이 반환되면 GPU를 인식하고 있다는 의미다.
+<br/>     
+코드 (4) : print(torch.cuda.current_device())           
+- 현재 사용 중인 GPU ID 확인.
+<br/>   
+코드 (5) : print(torch.cuda.get_device_name(torch.cuda.current_device()))          
+- 현재 사용 중인 GPU 이름 반환. 예를 들어 Tesla T4 같은 결과를 볼 수 있다.         
 <br/>
 
 아래와 같은 결과가 출력되면 PyTorch가 GPU를 정상적으로 인식하고 있는 것이다.      
