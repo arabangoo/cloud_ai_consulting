@@ -526,10 +526,9 @@ EC2 인스턴스 내의 로컬 자원으로 모델을 불러와 실행할 수 �
 g4dn.8xlarge 타입이 사용 불가면 Service Quotas에서 신청한다.   
 Service Quotas에서는 vCPU 기반으로 신청하기 때문에 g4dn.8xlarge를 사용하려면 32정도를 신청해야 한다.   
 https://aws.amazon.com/ko/ec2/instance-types/g4/   
+![image2](https://github.com/user-attachments/assets/58223c15-e88d-45d3-8d8f-a2850971f5ab)
 <br/>
-![image2](https://github.com/user-attachments/assets/72df5d9f-aaf4-4029-b4eb-64aebfaac52e)
-<br/>
-![image3](https://github.com/user-attachments/assets/1ef765c6-eab4-4975-8216-fa9fac766df4)
+![image3](https://github.com/user-attachments/assets/2aaa1a95-d187-4c3b-8488-6f5bd3e71406)
 <br/>
        
 (2) 가능한 "Nvidia Driver AMI GPU PyTorch" 문구가 들어가 있는 AMI로 서버를 생성하자.   
