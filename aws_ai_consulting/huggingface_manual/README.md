@@ -528,6 +528,7 @@ Service Quotas에서는 vCPU 기반으로 신청하기 때문에 g4dn.8xlarge를
 https://aws.amazon.com/ko/ec2/instance-types/g4/   
 <br/>
 ![image2](https://github.com/user-attachments/assets/72df5d9f-aaf4-4029-b4eb-64aebfaac52e)
+<br/>
 ![image3](https://github.com/user-attachments/assets/1ef765c6-eab4-4975-8216-fa9fac766df4)
 <br/>
        
