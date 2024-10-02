@@ -387,7 +387,7 @@ except Exception as e:
     print(f"텍스트 생성 중 에러 발생: {e}")
     raise e
 ```
-<br/><br/>
+<br/>
 
 (3) 모델과 instruction에 따라서 시간이 다소 걸릴 수도 있으니 30분 정도는 기다려보자.   
 아래와 같이 답변이 출력되면 정상적으로 코드가 실행된 것이다.    
