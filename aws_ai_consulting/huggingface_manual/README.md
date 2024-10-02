@@ -528,7 +528,8 @@ Service Quotas에서는 vCPU 기반으로 신청하기 때문에 g4dn.8xlarge를
 https://aws.amazon.com/ko/ec2/instance-types/g4/   
 ![image2](https://github.com/user-attachments/assets/58223c15-e88d-45d3-8d8f-a2850971f5ab)
 <br/>
-![image3](https://github.com/user-attachments/assets/2aaa1a95-d187-4c3b-8488-6f5bd3e71406)
+
+![image3](https://github.com/user-attachments/assets/f1e0d3e1-3ed6-4b35-90ff-6380e48d76f8)   
 <br/>
        
 (2) 가능한 "Nvidia Driver AMI GPU PyTorch" 문구가 들어가 있는 AMI로 서버를 생성하자.   
