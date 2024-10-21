@@ -139,8 +139,7 @@ docker --version
 
 (7) 그 다음 아래 명령어로 amazon linux 2 기반 Docker 컨테이너를 실행한다.   
 명령어 : docker run -it --rm amazonlinux:2 bash   
-<br/>
-     
+<br/>     
 (8) Python 3.8 버전으로 람다 함수를 사용하기에 패키징도 Python 3.8 버전으로 해야한다.    
 아래 순서대로 도커 컨테이너에서 Python 3.8 버전을 설치한다.   
 명령어 (1) : yum install -y amazon-linux-extras   
@@ -151,29 +150,24 @@ docker --version
 명령어 (6) : curl -O https://bootstrap.pypa.io/get-pip.py   
 명령어 (7) : python3.8 get-pip.py    
 명령어 (8) : pip3.8 --version   
-<br/>
-     
+<br/>   
 (9) 그 뒤, 컨네이너 안에서 lambda-package 디렉토리를 만들고 필수 라이브러리를 설치한다.    
 명령어 (1) : mkdir /lambda-package   
 명령어 (2) : pip3.8 install cryptography pdfplumber -t /lambda-package   
 <br/>
-   
 (10) 컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다.    
 즉, 지금부터는 ssh 터미널창 2개로 서버 작업을 하는 것이다.          
 일단 새로운 터미널창에서 아래와 같이 명령어를 입력해서 실행중인 컨테이너의 ID를 확인한다.   
 명령어 : docker ps   
 <br/>
-
 (11) 다음은 /home/ec2-uesr 경로에 있는 파이썬 파일을 도커 컨테이너 안으로 복사한다.   
 명령어 : docker cp /home/ec2-user/ai_pdf_summary_lambda.py <컨테이너 ID>:/lambda-package/   
 <br/>
-  
 (12) 그 이후 도커 컨테이너가 띄워져 있는 터미널창에서 아래 순서대로 패키징 작업을 한다.   
 명령어 (1) : cd /lambda-package   
 명령어 (2) : yum install -y zip   
 명령어 (3) : zip -r9 /tmp/ai_pdf_summary_lambda.zip .    
 <br/>
-
 (13) 패키징 작업이 완료되면 아래 명령어를 실행하여 zip 파일을 컨테이너 밖으로 복사한다.   
 즉, /home/ec2-user 폴더로 zip 파일을 복사하는 것이다.                  
 아래 명령어는 도커 컨테이너 안에서 실행하는 것이 아닌 새롭게 연 터미널창에서 실행하는 것이다.   
