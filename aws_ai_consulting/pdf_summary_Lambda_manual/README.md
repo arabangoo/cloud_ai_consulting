@@ -17,15 +17,17 @@ AI/ML을 위한 Lambda 함수는 메모리, 임시 스토리지, 제한 시간�
 ![image3](https://github.com/user-attachments/assets/66caf17b-ddf5-4dc6-a1d3-c8b6936bfcec)
 <br/>
                                 
-(4) 이제 람다 함수에 zip 파일을 업로드하는 방식으로 코드를 등록하면 된다.
-다만, 이 zip 파일의 경우 amazon linux에서 도커를 통해 패키징을 해줘야 한다.
-이런 사전 절차를 거쳐서 zip 파일을 패키징 해줘야 코드가 에러나지 않는다.
+(4) 이제 람다 함수에 zip 파일을 업로드하는 방식으로 코드를 등록하면 된다.   
+다만, 이 zip 파일의 경우 amazon linux에서 도커를 통해 패키징을 해줘야 한다.   
+이런 사전 절차를 거쳐서 zip 파일을 패키징 해줘야 코드가 에러나지 않는다.   
+![image4](https://github.com/user-attachments/assets/779f079f-ab63-47e9-861b-12165be5afc7)
+<br/>
 
+(5) 파일질라 등의 FTP 클라이언트 프로그램을 통해 ai_pdf_summary_lambda.py 파이썬 코드 파일을 서버로 복사해준다.   
+해당 파일은 amazon linux 서버의 /home/ec2-user 경로로 복사하면 된다.   
+<br/>
 
-(5) 파일질라 등의 FTP 클라이언트 프로그램을 통해 아래 파이썬 코드 파일을 서버로 복사해준다.
-해당 파일은 amazon linux 서버의 /home/ec2-user 경로로 복사하면 된다.
-
-           
+```python           
 import boto3
 import json
 import pdfplumber
@@ -109,81 +111,100 @@ def lambda_handler(event, context):
                     Key=f"{folder_name}error_logs/{s3_object}_error.log",
                     Body=error_log.encode('utf-8')
                 )
-          
-(6) 다음은 putty 등을 통해 서버에 접속하여 도커 환경을 구성해준다. 
-아래 순서대로 명령어를 실행하여 서버에 도커를 설치한다. 
-명령어 (1) : 시스템 패키지 업데이트
-yum update -y
+```
+<br/>
 
-명령어 (2) : Docker 설치
-yum install docker -y
+(6) 다음은 putty 등을 통해 서버에 접속하여 도커 환경을 구성해준다.    
+아래 순서대로 명령어를 실행하여 서버에 도커를 설치한다.    
+명령어 (1) : 시스템 패키지 업데이트   
+yum update -y   
+<br/>
 
-명령어 (3) : Docker 서비스 시작
-service docker start
+명령어 (2) : Docker 설치   
+yum install docker -y  
+<br/>
 
-명령어 (4) : ec2-user를 Docker 그룹에 추가하여 sudo 없이 Docker 실행
-usermod -a -G docker ec2-user
+명령어 (3) : Docker 서비스 시작   
+service docker start   
+<br/>
 
-명령어 (5) : 권한 반영을 위해 현재 세션을 종료하고 다시 접속하거나, 다음 명령어를 실행
-newgrp docker
+명령어 (4) : ec2-user를 Docker 그룹에 추가하여 sudo 없이 Docker 실행   
+usermod -a -G docker ec2-user   
+<br/>
 
-명령어 (6) : Docker 서비스 자동 시작 설정
-systemctl enable docker
+명령어 (5) : 권한 반영을 위해 현재 세션을 종료하고 다시 접속하거나, 다음 명령어를 실행   
+newgrp docker   
+<br/>
 
-명령어 (7) : Docker 버전 확인
-docker --version
+명령어 (6) : Docker 서비스 자동 시작 설정   
+systemctl enable docker   
+<br/>
 
-(7) 그 다음 아래 명령어로 amazon linux 2 기반 Docker 컨테이너를 실행한다.
-명령어 : docker run -it --rm amazonlinux:2 bash
+명령어 (7) : Docker 버전 확인   
+docker --version   
+<br/>
+
+(7) 그 다음 아래 명령어로 amazon linux 2 기반 Docker 컨테이너를 실행한다.   
+명령어 : docker run -it --rm amazonlinux:2 bash   
+<br/>
      
-(8) Python 3.8 버전으로 람다 함수를 사용하기에 패키징도 Python 3.8 버전으로 해야한다. 
-아래 순서대로 도커 컨테이너에서 Python 3.8 버전을 설치한다.
-명령어 (1) : yum install -y amazon-linux-extras
-명령어 (2) : amazon-linux-extras enable python3.8
-명령어 (3) : yum install -y python3.8 python3.8-devel
-명령어 (4) : alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
-명령어 (5) : python3 --version  
-명령어 (6) : curl -O https://bootstrap.pypa.io/get-pip.py
-명령어 (7) : python3.8 get-pip.py 
-명령어 (8) : pip3.8 --version
+(8) Python 3.8 버전으로 람다 함수를 사용하기에 패키징도 Python 3.8 버전으로 해야한다.    
+아래 순서대로 도커 컨테이너에서 Python 3.8 버전을 설치한다.   
+명령어 (1) : yum install -y amazon-linux-extras   
+명령어 (2) : amazon-linux-extras enable python3.8   
+명령어 (3) : yum install -y python3.8 python3.8-devel   
+명령어 (4) : alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2   
+명령어 (5) : python3 --version     
+명령어 (6) : curl -O https://bootstrap.pypa.io/get-pip.py   
+명령어 (7) : python3.8 get-pip.py    
+명령어 (8) : pip3.8 --version   
+<br/>
      
-(9) 그 뒤, 컨네이너 안에서 lambda-package 디렉토리를 만들고 필수 라이브러리를 설치한다. 
-명령어 (1) : mkdir /lambda-package
-명령어 (2) : pip3.8 install cryptography pdfplumber -t /lambda-package
+(9) 그 뒤, 컨네이너 안에서 lambda-package 디렉토리를 만들고 필수 라이브러리를 설치한다.    
+명령어 (1) : mkdir /lambda-package   
+명령어 (2) : pip3.8 install cryptography pdfplumber -t /lambda-package   
+<br/>
    
-(10) 컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다. 
-즉, 지금부터는 ssh 터미널창 2개로 서버 작업을 하는 것이다.       
-일단 새로운 터미널창에서 아래와 같이 명령어를 입력해서 실행중인 컨테이너의 ID를 확인한다.
-명령어 : docker ps
+(10) 컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다.    
+즉, 지금부터는 ssh 터미널창 2개로 서버 작업을 하는 것이다.          
+일단 새로운 터미널창에서 아래와 같이 명령어를 입력해서 실행중인 컨테이너의 ID를 확인한다.   
+명령어 : docker ps   
+<br/>
 
-(11) 다음은 /home/ec2-uesr 경로에 있는 파이썬 파일을 도커 컨테이너 안으로 복사한다.
-명령어 : docker cp /home/ec2-user/ai_pdf_summary_lambda.py <컨테이너 ID>:/lambda-package/
+(11) 다음은 /home/ec2-uesr 경로에 있는 파이썬 파일을 도커 컨테이너 안으로 복사한다.   
+명령어 : docker cp /home/ec2-user/ai_pdf_summary_lambda.py <컨테이너 ID>:/lambda-package/   
+<br/>
   
-(12) 그 이후 도커 컨테이너가 띄워져 있는 터미널창에서 아래 순서대로 패키징 작업을 한다.
-명령어 (1) : cd /lambda-package
-명령어 (2) : yum install -y zip
-명령어 (3) : zip -r9 /tmp/ai_pdf_summary_lambda.zip . 
+(12) 그 이후 도커 컨테이너가 띄워져 있는 터미널창에서 아래 순서대로 패키징 작업을 한다.   
+명령어 (1) : cd /lambda-package   
+명령어 (2) : yum install -y zip   
+명령어 (3) : zip -r9 /tmp/ai_pdf_summary_lambda.zip .    
+<br/>
 
-(13) 패키징 작업이 완료되면 아래 명령어를 실행하여 zip 파일을 컨테이너 밖으로 복사한다.
-즉, /home/ec2-user 폴더로 zip 파일을 복사하는 것이다.               
-아래 명령어는 도커 컨테이너 안에서 실행하는 것이 아닌 새롭게 연 터미널창에서 실행하는 것이다.
-명령어 : docker cp <컨테이너 ID>:/tmp/ai_pdf_summary_lambda.zip /home/ec2-user/
+(13) 패키징 작업이 완료되면 아래 명령어를 실행하여 zip 파일을 컨테이너 밖으로 복사한다.   
+즉, /home/ec2-user 폴더로 zip 파일을 복사하는 것이다.                  
+아래 명령어는 도커 컨테이너 안에서 실행하는 것이 아닌 새롭게 연 터미널창에서 실행하는 것이다.   
+명령어 : docker cp <컨테이너 ID>:/tmp/ai_pdf_summary_lambda.zip /home/ec2-user/      
+![image5](https://github.com/user-attachments/assets/1a1791b1-d23e-4ef3-852e-86b3fc62995d)
+<br/>
 
-
-(14) 다시 파일질라 등의 FTP 클라이언트 프로그램을 통해 로컬 PC로 zip 파일을 복사한다.
-그 다음 Lambda 함수에 zip파일을 업로드해서 코드를 등록한다.
-
+(14) 다시 파일질라 등의 FTP 클라이언트 프로그램을 통해 로컬 PC로 zip 파일을 복사한다.   
+그 다음 Lambda 함수에 zip파일을 업로드해서 코드를 등록한다.   
+![image6](https://github.com/user-attachments/assets/017ded6c-3f9e-4d2f-a6bb-26bc315d5a72)
+<br/>
    
-(15) 핸들러 이름을 변경해야 코드가 정상 작동한다.
-일단 본 테스트에서는 "ai_pdf_summary_lambda.lambda_handler"라고 이름을 변경한다.
-런타임 설정에서 파이썬 버전도 변경할 수 있으니 
-추후 다른 파이썬 버전으로 코드를 다시 패키징해서 올리는 경우 런타임 설정에서 파이썬 버전도 변경해준다.
-
+(15) 핸들러 이름을 변경해야 코드가 정상 작동한다.   
+일단 본 테스트에서는 "ai_pdf_summary_lambda.lambda_handler"라고 이름을 변경한다.   
+런타임 설정에서 파이썬 버전도 변경할 수 있으니    
+추후 다른 파이썬 버전으로 코드를 다시 패키징해서 올리는 경우 런타임 설정에서 파이썬 버전도 변경해준다.   
+![image7](https://github.com/user-attachments/assets/17d9b9e0-8032-465b-9b3a-ffafadd13732)
+<br/>
     
-(16) 이제 테스트 json 코드를 작성해보자.
-Lambda 함수 테스트 항목에 들어가서 아래와 같이 코드를 작성한 후 테스트를 실행한다.
-PDF 파일 이름은 본인이 가지고 있는 PDF 파일 이름으로 바꾼다.
+(16) 이제 테스트 json 코드를 작성해보자.   
+Lambda 함수 테스트 항목에 들어가서 아래와 같이 코드를 작성한 후 테스트를 실행한다.   
+PDF 파일 이름은 본인이 가지고 있는 PDF 파일 이름으로 바꾼다.   
 
+```
 {
   "Records": [
     {
@@ -205,7 +226,16 @@ PDF 파일 이름은 본인이 가지고 있는 PDF 파일 이름으로 바꾼�
     }
   ]
 }
+```
+<br/>
 
-
+![image8](https://github.com/user-attachments/assets/8c62d1b2-e88d-42b0-8ac0-89b59a770c06)
+<br/>
           
-(17) 테스트를 실행할 때마다 아래와 같이 별도의 summay 버킷과 파일이 만들어지면 성공이다. 
+(17) 테스트를 실행할 때마다 아래와 같이 별도의 summay 버킷과 파일이 만들어지면 성공이다.       
+![image9](https://github.com/user-attachments/assets/044e72b3-7e0e-4a44-a42b-25b37775c4ca)
+<br/>
+
+
+
+
