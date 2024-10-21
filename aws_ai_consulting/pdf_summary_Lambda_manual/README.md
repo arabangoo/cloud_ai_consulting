@@ -223,6 +223,23 @@ PDF 파일 이름은 본인이 가지고 있는 PDF 파일 이름으로 바꾼�
 ![image9](https://github.com/user-attachments/assets/044e72b3-7e0e-4a44-a42b-25b37775c4ca)
 <br/>
 
+---
+<br/>
 
+이번에는 PDF 업로드시 자동 PDF 요약을 진행해보겠다.   
+Lambda 함수에 S3 트리거를 추가하면 S3 버킷 폴더에 PDF 업로드시 Lambda가 실행되어 PDF 자동 요약을 해준다.   
+<br/>
 
+(1) Lambda 함수 아래 있는 트리거 추가 버튼을 클릭하고 S3를 소스로 지정한 다음 이미지와 같이 설정한다.   
+접두사의 경우 S3 버킷의 폴더 이름을 기입하면 되고 접미사의 경우 S3에 업로드하는 파일의 형식을 기입하면 된다.   
+![image10](https://github.com/user-attachments/assets/21898c4c-840b-4a7d-bbf6-0839a22f02d9)
+<br/>
 
+(2) 아래와 같이 Lambda 함수와 S3 트리거가 연결되면    
+이제 지정한 S3 버킷 폴더에 PDF 파일이 업로드될 때마다 Lambda 함수가 실행되어 내용을 요약한다.   
+![image11](https://github.com/user-attachments/assets/80e46f06-6ffb-4c84-9913-c77a562997d2)
+<br/>
+
+(3) 논문 요약 테스트를 위해 arXiv 등의 논문 사이트에서 논문 PDF를 다운로드해서 테스트 해보자.    
+PDF 파일 요약 속도를 확인하며 너무 성능이 떨어지지 않게 Lambda 사양을 조절해주면 된다.   
+![image12](https://github.com/user-attachments/assets/1d63f609-b9a5-4fdc-85ad-93628d5208cd)
