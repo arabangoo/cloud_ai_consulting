@@ -119,27 +119,21 @@ def lambda_handler(event, context):
 명령어 (1) : 시스템 패키지 업데이트   
 yum update -y   
 <br/>
-
 명령어 (2) : Docker 설치   
 yum install docker -y  
 <br/>
-
 명령어 (3) : Docker 서비스 시작   
 service docker start   
 <br/>
-
 명령어 (4) : ec2-user를 Docker 그룹에 추가하여 sudo 없이 Docker 실행   
 usermod -a -G docker ec2-user   
 <br/>
-
 명령어 (5) : 권한 반영을 위해 현재 세션을 종료하고 다시 접속하거나, 다음 명령어를 실행   
 newgrp docker   
 <br/>
-
 명령어 (6) : Docker 서비스 자동 시작 설정   
 systemctl enable docker   
 <br/>
-
 명령어 (7) : Docker 버전 확인   
 docker --version   
 <br/>
