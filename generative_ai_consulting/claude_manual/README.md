@@ -9,6 +9,7 @@ Claude 사이트 : https://claude.ai/
 2. 인프라 엔지니어가 사용하는 예시             
 <img width="600" alt="image_2" src="https://github.com/user-attachments/assets/a7b9ce58-0f35-494d-8f48-8c0332fde7cb">
 <br/>
+
         
 3. ChatGPT와의 비교        
 클로드를 만든 Anthropic은 미국의 인공지능 스타트업이다.    
@@ -29,6 +30,7 @@ Claude AI를 활용하면 AI 챗봇 내에 완전한 문학 작품을 로드할 
 이런 시스템으로 AI의 윤리성을 강화하는 동시에 AI가 모호한 답변을 주는 현상을 줄일 수 있을 것이다.   
 <img width="900" alt="image_3" src="https://github.com/user-attachments/assets/865a4f74-b865-4182-89c4-01fa549b6808">
 <br/>
+
                                
 4. 인간적이고 자연스러운 답변   
 질문 : 아픈 친구를 위로해주고 싶다. 어떤 말을 해주면 좋을까?     
@@ -38,7 +40,8 @@ Claude AI를 활용하면 AI 챗봇 내에 완전한 문학 작품을 로드할 
 <img width="700" alt="image_5" src="https://github.com/user-attachments/assets/1e820106-0f0f-4a28-914c-1d1cc1a50fcf">
 <br/>
 
-6. AWS와의 연동   
+
+5. AWS와의 연동   
 아마존은 대규모언어모델(LLM) 개발 스타트업인 앤트로픽에 최대 40억 달러를 투자하고 지분을 확보했다.    
 이에 따라 앤트로픽은 AWS 인프라를 클로드 모델의 기본 클라우드로 활용한다.    
 엔트로픽은 AWS의 트레이니엄, 인퍼런시아 칩을 사용해 새로운 파운데이션모델을 개발한다.    
