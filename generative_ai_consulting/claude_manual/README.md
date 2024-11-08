@@ -28,15 +28,18 @@ Claude AI를 활용하면 AI 챗봇 내에 완전한 문학 작품을 로드할 
 <img width="900" alt="image_3" src="https://github.com/user-attachments/assets/865a4f74-b865-4182-89c4-01fa549b6808">
 <br/><br/>
                                
-4. 인간적이고 자연스러운 답변   
-질문 : 아픈 친구를 위로해주고 싶다. 어떤 말을 해주면 좋을까?     
-(1) ChatGPT의 답변   
+4. 인간적이고 자연스러운 답변
+<br/>
+질문 : 아픈 친구를 위로해주고 싶다. 어떤 말을 해주면 좋을까?
+<br/>    
+(1) ChatGPT의 답변      
 <img width="700" alt="image_4" src="https://github.com/user-attachments/assets/4df6ff9f-adef-4235-8165-464e33daf3c1">
-(2) Claude의 답변   
+<br/>
+(2) Claude의 답변      
 <img width="700" alt="image_5" src="https://github.com/user-attachments/assets/1e820106-0f0f-4a28-914c-1d1cc1a50fcf">
 <br/><br/>
 
-5. AWS와의 연동   
+6. AWS와의 연동   
 아마존은 대규모언어모델(LLM) 개발 스타트업인 앤트로픽에 최대 40억 달러를 투자하고 지분을 확보했다.    
 이에 따라 앤트로픽은 AWS 인프라를 클로드 모델의 기본 클라우드로 활용한다.    
 엔트로픽은 AWS의 트레이니엄, 인퍼런시아 칩을 사용해 새로운 파운데이션모델을 개발한다.    
