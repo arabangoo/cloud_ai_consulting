@@ -29,12 +29,15 @@ Claude AI를 활용하면 AI 챗봇 내에 완전한 문학 작품을 로드할 
 <br/><br/>
                                
 4. 인간적이고 자연스러운 답변
+   
 <br/>
 질문 : 아픈 친구를 위로해주고 싶다. 어떤 말을 해주면 좋을까?
-<br/>    
+<br/>
+
 (1) ChatGPT의 답변      
 <img width="700" alt="image_4" src="https://github.com/user-attachments/assets/4df6ff9f-adef-4235-8165-464e33daf3c1">
 <br/>
+
 (2) Claude의 답변      
 <img width="700" alt="image_5" src="https://github.com/user-attachments/assets/1e820106-0f0f-4a28-914c-1d1cc1a50fcf">
 <br/><br/>
