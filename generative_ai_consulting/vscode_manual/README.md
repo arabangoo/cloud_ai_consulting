@@ -5,7 +5,7 @@
 (1) 먼저 아래 공식 사이트 다운로드 페이지에 들어가도록 한다.   
 <br/>
 VSCode 공식 다운로드 웹페이지 : https://code.visualstudio.com/Download   
-<br/><br/>   
+<br/>  
 각자 사용하는 OS에 맞는 버전을 다운로드 받아 설치해준다.   
 <br/> 
                 
