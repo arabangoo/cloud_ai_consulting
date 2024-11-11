@@ -89,7 +89,8 @@ CodeWhisperer의 설정을 보면 사용한 코드를 서비스 개선을 위해
 ---
 <br/>
 
-3. VSCode에서 ChatGPT 사용하기   
+3. VSCode에서 ChatGPT 사용하기
+   
 (1) VSCode 실행 후 [확장 프로그램] 메뉴로 들어가서 검색창에서 "chatgpt"를 검색한다.       
 ChatGPT 관련 여러 플러그인이 나올 텐데 여기서는 ChatGPT - Genie AI를 설치해주자.   
 ![image11](https://github.com/user-attachments/assets/376da129-bc59-411a-8e30-c2b785ac7f2c)
