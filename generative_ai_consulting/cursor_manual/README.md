@@ -65,10 +65,10 @@ Cursor에서 코딩을 도와주는 AI 기능은 크게 코드 수정, LLM Chat,
 (3) tab : 자동 코드 추천   
 에디터에서 약 1초간 동작이 없는 경우 Cursor Copilot++ 이(가) 자동으로 코드를 추천   
 tab키를 누르면 Cursor Copilot++ 이(가) 자동으로 만들어주는 코드를 적용   
-<br/>
 
 여기서 중요한 것은 심볼인데 이 심볼들을 조합해서 프롬프트를 효율적으로 만들어서 LLM에게 전달 할 수 있다.    
 여기서는 대표적으로 중요한 심볼 3가지만 소개하겠다.   
+
 @Codebase : 코드베이스 기반 검색 기능   
 @Docs : 문서기반 검색 기능 - 설정 ( [Cursor Settings > Features] )에서 문서를 업로드하거나 채팅창에서 @Add로 문서 등록 가능   
 @Web : 웹 기반 검색 기능 - 설정  ( [Cursor Settings > Features] )에서 항상 사용할지 체크 가능(default : 사용 안 함)   
