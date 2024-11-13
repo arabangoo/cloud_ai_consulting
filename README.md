@@ -1,2 +1,2 @@
 ## [Generative AI Handbook]
-# https://genai-handbook.github.io/
+https://genai-handbook.github.io/
