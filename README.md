@@ -4,3 +4,7 @@ https://genai-handbook.github.io/
 
 ### [AI Model & API Providers Analysis]   
 https://artificialanalysis.ai/
+<br/>
+
+### [LLM Pricing Comparison & Calculator]
+https://llmpricecheck.com/
