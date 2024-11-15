@@ -8,3 +8,7 @@ https://artificialanalysis.ai/
 
 ### [LLM Pricing Comparison & Calculator]
 https://llmpricecheck.com/
+<br/><br/>
+
+### [AI latest Research Papers]
+https://arxiv.org/list/cs.AI/recent
