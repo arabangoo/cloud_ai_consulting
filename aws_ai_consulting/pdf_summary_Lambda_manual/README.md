@@ -124,53 +124,53 @@ yum update -y
 yum groupinstall -y "Development Tools"          
 yum install -y bzip2-devel libffi-devel wget openssl11 openssl11-devel sqlite-devel          
 
-3. Python 3.10 소스코드 다운로드 및 설치    
-cd /opt    
-wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz    
-tar xzf Python-3.10.13.tgz    
-cd Python-3.10.13    
-<br/>
-4. SSL 지원을 포함하여 configure (중요: LDFLAGS와 CPPFLAGS 추가)    
-export LDFLAGS="-Wl,-rpath=/usr/local/lib"    
-export CPPFLAGS="-I/usr/include/openssl11"    
-./configure --enable-optimizations --with-openssl11    
-make altinstall    
-<br/>
-5. 불필요한 파일 정리    
-cd /opt    
-rm -f Python-3.10.13.tgz    
-<br/>
-6. 심볼릭 링크 생성     
-ln -sf /usr/local/bin/python3.10 /usr/local/bin/python3    
-ln -sf /usr/local/bin/pip3.10 /usr/local/bin/pip3    
-<br/>
-7. 버전 확인    
-python3.10 --version    
-pip3.10 –version    
-<br/>
-8. pip 업그레이드     
-python3.10 -m pip install --upgrade pip    
-<br/>
-9. Lambda 패키지 생성    
-Lambda 함수에 필요한 라이브러리를 /lambda-package 디렉토리에 설치한다.    
-mkdir /lambda-package    
-python3.10 -m pip install cryptography pdfplumber -t /lambda-package    
-<br/>
-컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다.      
-즉, 지금부터는 ssh 터미널창 2개로 서버 작업을 하는 것이다.    
-일단 새로운 터미널창에서 /home/ec2-user 경로로 들어간 후 아래 절차대로 진행한다.    
-<br/>
-10. Lambda 코드 복사    
-호스트 시스템에서 Lambda 함수 파일을 컨테이너로 복사한다.    
-docker ps  # 실행 중인 컨테이너 ID 확인    
-docker cp ai_pdf_summary_lambda.py <컨테이너 ID>:/lambda-package/    
-<br/>
-11. 다시 기존 ssh 터미널창으로 잠깐 돌아와 zip 파일 패키징을 시작한다.    
-cd /lambda-package    
-zip -r9 /tmp/ ai_pdf_summary_lambda.zip .    
-<br/>
-12. 이번에는 새롭게 연 ssh 터미널창에서 zip 파일 복사 작업을 한다.    
-docker cp <컨테이너 ID>:/tmp/ ai_pdf_summary_lambda.zip .     
+3. Python 3.10 소스코드 다운로드 및 설치       
+cd /opt       
+wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz       
+tar xzf Python-3.10.13.tgz       
+cd Python-3.10.13       
+
+4. SSL 지원을 포함하여 configure (중요: LDFLAGS와 CPPFLAGS 추가)       
+export LDFLAGS="-Wl,-rpath=/usr/local/lib"       
+export CPPFLAGS="-I/usr/include/openssl11"       
+./configure --enable-optimizations --with-openssl11       
+make altinstall       
+
+5. 불필요한 파일 정리       
+cd /opt       
+rm -f Python-3.10.13.tgz       
+
+6. 심볼릭 링크 생성        
+ln -sf /usr/local/bin/python3.10 /usr/local/bin/python3       
+ln -sf /usr/local/bin/pip3.10 /usr/local/bin/pip3       
+
+7. 버전 확인       
+python3.10 --version       
+pip3.10 –version       
+
+8. pip 업그레이드        
+python3.10 -m pip install --upgrade pip       
+
+9. Lambda 패키지 생성       
+Lambda 함수에 필요한 라이브러리를 /lambda-package 디렉토리에 설치한다.       
+mkdir /lambda-package       
+python3.10 -m pip install cryptography pdfplumber -t /lambda-package       
+
+컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다.         
+즉, 지금부터는 ssh 터미널창 2개로 서버 작업을 하는 것이다.       
+일단 새로운 터미널창에서 /home/ec2-user 경로로 들어간 후 아래 절차대로 진행한다.       
+
+10. Lambda 코드 복사       
+호스트 시스템에서 Lambda 함수 파일을 컨테이너로 복사한다.       
+docker ps  # 실행 중인 컨테이너 ID 확인       
+docker cp ai_pdf_summary_lambda.py <컨테이너 ID>:/lambda-package/       
+
+11. 다시 기존 ssh 터미널창으로 잠깐 돌아와 zip 파일 패키징을 시작한다.       
+cd /lambda-package       
+zip -r9 /tmp/ ai_pdf_summary_lambda.zip .       
+
+12. 이번에는 새롭게 연 ssh 터미널창에서 zip 파일 복사 작업을 한다.       
+docker cp <컨테이너 ID>:/tmp/ ai_pdf_summary_lambda.zip .        
 <br/>
 
 (7) 다시 파일질라 등의 FTP 클라이언트 프로그램을 통해 로컬 PC로 zip 파일을 복사한다.   
