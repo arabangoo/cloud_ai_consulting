@@ -1,9 +1,9 @@
 ## [Lambda에서 Bedrock AI 모델을 호출하여 PDF 요약]
 
 (1) 일단 아래와 같이 파이썬 런타임 기반으로 Lambda 함수를 작성하자.   
-여기서는 Python 3.8 버전을 사용하겠다.      
+여기서는 Python 3.10 버전을 사용하겠다.      
 추가로 AdministratorAccess 권한을 가진 임시 역할을 생성해서 할당한다.      
-![image1](https://github.com/user-attachments/assets/9cfd9743-2516-43a0-b5fc-1c8b992f162c)
+![그림1](https://github.com/user-attachments/assets/46efabb9-f2eb-46c2-8bfc-644b60c624d2)
 <br/>
                 
 (2) 함수가 생성되면 메모리와 임시 스토리지 용량을 늘려주고 제한 시간도 15분으로 설정해준다.   
