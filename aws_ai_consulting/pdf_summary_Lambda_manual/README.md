@@ -154,7 +154,7 @@ def lambda_handler(event, context):
 9. Lambda 패키지 생성       
 Lambda 함수에 필요한 라이브러리를 /lambda-package 디렉토리에 설치한다.       
 - mkdir /lambda-package       
-- python3.10 -m pip install cryptography pdfplumber -t /lambda-package       
+- python3.10 -m pip install pdfplumber -t /lambda-package       
 컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다.         
 즉, 지금부터는 ssh 터미널창 2개로 서버 작업을 하는 것이다.       
 일단 새로운 터미널창에서 /home/ec2-user 경로로 들어간 후 아래 절차대로 진행한다.       
