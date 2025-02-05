@@ -8,7 +8,7 @@
                 
 (2) 함수가 생성되면 메모리와 임시 스토리지 용량을 늘려주고 제한 시간도 15분으로 설정해준다.   
 AI/ML을 위한 Lambda 함수는 메모리, 임시 스토리지, 제한 시간을 여유롭게 설정해줘야 한다.          
-![image2](https://github.com/user-attachments/assets/529713d6-ace7-4556-8734-28d1d33ad953)
+![그림2](https://github.com/user-attachments/assets/d6b050f6-d3cc-40e6-835c-01972a4d7d8d)
 <br/>
         
 (3) 다음은 코드와 연동될 환경 변수를 설정해줘야 한다.    
