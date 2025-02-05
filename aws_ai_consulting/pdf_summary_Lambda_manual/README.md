@@ -146,7 +146,7 @@ def lambda_handler(event, context):
 
 7. 버전 확인       
 - python3.10 --version       
-- pip3.10 –version       
+- pip3.10 --version       
 
 8. pip 업그레이드        
 - python3.10 -m pip install --upgrade pip       
