@@ -152,7 +152,7 @@ def lambda_handler(event, context):
 - python3.10 -m pip install --upgrade pip       
 
 9. Lambda 패키지 생성       
-- Lambda 함수에 필요한 라이브러리를 /lambda-package 디렉토리에 설치한다.       
+Lambda 함수에 필요한 라이브러리를 /lambda-package 디렉토리에 설치한다.       
 - mkdir /lambda-package       
 - python3.10 -m pip install cryptography pdfplumber -t /lambda-package       
 컨테이너 안에서 필수 라이브러리 설치가 완료되면 ssh 터미널창 하나를 더 띄워서 서버에 접속한다.         
