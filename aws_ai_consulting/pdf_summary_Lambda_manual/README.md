@@ -115,14 +115,14 @@ def lambda_handler(event, context):
 
 (6) 다음은 putty 등을 통해 서버에 접속하여 도커 환경을 구성해준다.     
 아래 순서대로 명령어를 실행하여 서버에 도커 환경을 구성하고 zip 파일 패키징을 한다.    
-<br/>
+
 1.  새로운 Amazon Linux 2 컨테이너 실행      
 docker run -it --rm amazonlinux:2 bash          
 <br/>
-2. 필요한 개발 도구 및 라이브러리 설치 (SSL 관련 패키지 추가)    
-yum update -y   
-yum groupinstall -y "Development Tools"    
-yum install -y bzip2-devel libffi-devel wget openssl11 openssl11-devel sqlite-devel    
+2. 필요한 개발 도구 및 라이브러리 설치 (SSL 관련 패키지 추가)       
+yum update -y      
+yum groupinstall -y "Development Tools"       
+yum install -y bzip2-devel libffi-devel wget openssl11 openssl11-devel sqlite-devel       
 <br/>
 3. Python 3.10 소스코드 다운로드 및 설치    
 cd /opt    
