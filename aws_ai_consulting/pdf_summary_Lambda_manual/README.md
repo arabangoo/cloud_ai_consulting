@@ -118,12 +118,12 @@ def lambda_handler(event, context):
 
 1.  새로운 Amazon Linux 2 컨테이너 실행      
 docker run -it --rm amazonlinux:2 bash          
-<br/>
-2. 필요한 개발 도구 및 라이브러리 설치 (SSL 관련 패키지 추가)       
-yum update -y      
-yum groupinstall -y "Development Tools"       
-yum install -y bzip2-devel libffi-devel wget openssl11 openssl11-devel sqlite-devel       
-<br/>
+
+2. 필요한 개발 도구 및 라이브러리 설치 (SSL 관련 패키지 추가)          
+yum update -y         
+yum groupinstall -y "Development Tools"          
+yum install -y bzip2-devel libffi-devel wget openssl11 openssl11-devel sqlite-devel          
+
 3. Python 3.10 소스코드 다운로드 및 설치    
 cd /opt    
 wget https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz    
