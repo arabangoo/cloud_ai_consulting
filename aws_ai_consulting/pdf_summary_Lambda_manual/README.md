@@ -166,10 +166,10 @@ Lambda 함수에 필요한 라이브러리를 /lambda-package 디렉토리에 �
 
 11. 다시 기존 ssh 터미널창으로 잠깐 돌아와 zip 파일 패키징을 시작한다.       
 - cd /lambda-package       
-- zip -r9 /tmp/ ai_pdf_summary_lambda.zip .       
+- zip -r9 /tmp/ai_pdf_summary_lambda.zip .       
 
 12. 이번에는 새롭게 연 ssh 터미널창에서 zip 파일 복사 작업을 한다.       
-- docker cp <컨테이너 ID>:/tmp/ ai_pdf_summary_lambda.zip .        
+- docker cp <컨테이너 ID>:/tmp/ai_pdf_summary_lambda.zip .        
 <br/>
 
 (7) 다시 파일질라 등의 FTP 클라이언트 프로그램을 통해 로컬 PC로 zip 파일을 복사한다.   
