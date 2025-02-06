@@ -143,7 +143,7 @@ https://lmstudio.ai/
 
 3. Ollama와 LM Studio의 차이점      
 <img width="600" alt="image11" src="https://github.com/user-attachments/assets/b2cff3a7-3ba5-479d-9d88-637981b3625b" />
-<br/>
+<br/><br/>
 
 [LM Studio 사용이 적합한 경우]   
 (1) 사용 친화적 환경 선호 사용자 : 그래픽 인터페이스를 통해 쉽게 LLM을 사용해보고 싶은 경우   
