@@ -13,7 +13,7 @@ Ollama, LM Studio는 로컬 PC에 다운로드한 LLM을 구동할 수 있는 �
 (1) Ollama 공식 웹사이트 주소는 아래와 같다.   
 사용하는 OS 종류에 맞게 프로그램을 다운로드 하면 된다.   
 https://ollama.com/    
-<img width="500" alt="image1" src="https://github.com/user-attachments/assets/9781a411-3a16-4cf6-b95d-935e1a0e3a31" />
+<img width="300" alt="image1" src="https://github.com/user-attachments/assets/9781a411-3a16-4cf6-b95d-935e1a0e3a31" />
 <br/>
         
 (2) 다운로드한 설치파일을 실행해서 Ollama를 설치하자.        
