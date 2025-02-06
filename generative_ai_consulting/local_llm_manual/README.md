@@ -128,18 +128,18 @@ https://lmstudio.ai/
 
 (2) 프로그램을 다운로드 후 설치하면 LM Studio가 추천하는 LLM을 추가로 다운로드 하거나 해당 단계를 건너뛸 수 있다.      
 <img width="1600" alt="image8" src="https://github.com/user-attachments/assets/41650117-23ce-43e7-a9a2-a65fc0afb269" />
-<br/>
+<br/><br/>
       
 (3) 만약 위 단계를 건너뛰면 기본 화면 사이드바의 "Discover" 항목에서 원하는 모델을 찾고 다운로드 할 수 있다.      
 <img width="2000" alt="image9" src="https://github.com/user-attachments/assets/4dd387ca-1664-42b7-b902-05a3d547d36f" />
-<br/>
+<br/><br/>
 
 (4) 다운로드한 모델을 AI Chat 화면에서 사용해볼 수 있다.   
 ![image10](https://github.com/user-attachments/assets/daf5a429-5b72-44ba-a10b-c3340ded804d)
-<br/>
+<br/><br/>
 
 ---
-<br/>
+<br/><br/>
 
 3. Ollama와 LM Studio의 차이점      
 <img width="600" alt="image11" src="https://github.com/user-attachments/assets/b2cff3a7-3ba5-479d-9d88-637981b3625b" />
