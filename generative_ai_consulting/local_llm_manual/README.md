@@ -90,13 +90,13 @@ SYSTEM """
 
 (8) Ollama의 파이썬 메소드는 아래 이미지와 같다.   
 <img width="600" alt="image5" src="https://github.com/user-attachments/assets/a1cb86aa-9d33-40f4-8e00-0930600d49a1" />
-<br/>
+<br/><br/>
 
 (9) Ollama Rest API 사용   
 Ollama는 다른 어플리케이션과 통합하는데 사용할 수 있는 Rest API를 제공하고 있다.   
 Python의 requests 라이브러리를 사용한 예는 아래 이미지와 같다.   
 <img width="500" alt="image6" src="https://github.com/user-attachments/assets/5f22b855-48e5-4c8b-a6e4-0de775030b4e" />
-<br/>
+<br/><br/>
 
 [Ollama의 성능 향상을 위한 하드웨어 업그레이드]   
 - CPU의 파워 업   
