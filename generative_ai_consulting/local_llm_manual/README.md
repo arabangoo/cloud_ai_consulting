@@ -119,7 +119,8 @@ CUDA 지원을 갖춘 엔비디아 GPU(예: RTX3080, RTX4090 등)
 ---
 <br/>
 
-2. LM Studio 설치      
+2. LM Studio 설치
+
 (1) LM Studio 공식 웹사이트 주소는 아래와 같다.      
 사용하는 OS 종류에 맞게 프로그램을 다운로드 하면 된다.      
 https://lmstudio.ai/   
