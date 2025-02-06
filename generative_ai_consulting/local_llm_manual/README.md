@@ -6,6 +6,7 @@ Ollama, LM Studio는 로컬 PC에 다운로드한 LLM을 구동할 수 있는 �
 <br/>
 
 ---
+<br/>
    
 1. Ollama 설치    
    
@@ -44,10 +45,12 @@ https://ollama.com/
 
 (5) 긴 문장을 입력하려고 할 때는 """로 문장을 감싼다.       
 
+///
 >>> """   
 안녕하세요.   
 오늘도 좋은 하루 되세요!   
-"""   
+"""
+/// 
 <br/>
 
 (6) 일부 멀티모달 모델은 이미지 첨부도 가능하다.   
@@ -108,6 +111,7 @@ CUDA 지원을 갖춘 엔비디아 GPU(예: RTX3080, RTX4090 등)
 <br/>
 
 ---
+<br/>
 
 2. LM Studio 설치      
 (1) LM Studio 공식 웹사이트 주소는 아래와 같다.      
@@ -129,6 +133,7 @@ https://lmstudio.ai/
 <br/>
 
 ---
+<br/>
 
 3. Ollama와 LM Studio의 차이점      
 <img width="600" alt="image11" src="https://github.com/user-attachments/assets/b2cff3a7-3ba5-479d-9d88-637981b3625b" />
