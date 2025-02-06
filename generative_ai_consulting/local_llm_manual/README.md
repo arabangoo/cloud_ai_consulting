@@ -124,7 +124,7 @@ CUDA 지원을 갖춘 엔비디아 GPU(예: RTX3080, RTX4090 등)
 사용하는 OS 종류에 맞게 프로그램을 다운로드 하면 된다.      
 https://lmstudio.ai/   
 <img width="1800" alt="image7" src="https://github.com/user-attachments/assets/9e9ed9ab-0746-40e4-8bf5-5fb2e4a6e8bd" />
-<br/>
+<br/><br/>
 
 (2) 프로그램을 다운로드 후 설치하면 LM Studio가 추천하는 LLM을 추가로 다운로드 하거나 해당 단계를 건너뛸 수 있다.      
 <img width="1600" alt="image8" src="https://github.com/user-attachments/assets/41650117-23ce-43e7-a9a2-a65fc0afb269" />
