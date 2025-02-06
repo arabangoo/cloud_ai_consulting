@@ -17,7 +17,7 @@ https://ollama.com/
 <br/>
         
 (2) 다운로드한 설치파일을 실행해서 Ollama를 설치하자.        
-<img width="1200" alt="image2" src="https://github.com/user-attachments/assets/29bdda31-c20d-4169-9d71-d97c0cb036cc" />
+<img width="600" alt="image2" src="https://github.com/user-attachments/assets/29bdda31-c20d-4169-9d71-d97c0cb036cc" />
 <br/> 
 
 만약 리눅스 환경이라면 아래 이미지와 같이 설치하면 된다.   
