@@ -4,6 +4,9 @@ https://arabangoo.com/
 ### [Generative AI Handbook]
 https://genai-handbook.github.io/   
 <br/>
+### [MIT Deep Learning]   
+https://udlbook.github.io/udlbook/      
+<br/>
 ### [AI Model & API Providers Analysis]   
 https://artificialanalysis.ai/
 <br/><br/>
