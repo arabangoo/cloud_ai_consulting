@@ -102,7 +102,6 @@ resources, prompts, tools, sampling이 그것이다.
 1. 클로드 데스크탑을 다운로드 한다.   
 다운로드 링크 : https://claude.ai/download   
 <br/>
-
 2. "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.
 ![image_15](https://github.com/user-attachments/assets/e736e217-b1bf-4e8e-9639-000f77f26ecf)   
 <img width="1000" alt="image_16" src="https://github.com/user-attachments/assets/531037b7-3bae-40c2-a9a4-2830757c9974" />
@@ -119,7 +118,6 @@ smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.
 <img width="800" alt="image_17" src="https://github.com/user-attachments/assets/d607a881-409a-4691-805d-3ed6f127f4ab" />    
 <img width="1000" alt="image_18" src="https://github.com/user-attachments/assets/c3e3a3e0-add6-4512-aa06-5f7153d66e8e" />   
 <br/>
-
 다른 방법으로는 JSON 내용을 복사한 후 클로드의 설정 편집을 클릭하자.   
 <img width="800" alt="image_19" src="https://github.com/user-attachments/assets/b91beadd-4547-48fc-8757-78d75ddebd0c" />
 <img width="800" alt="image_20" src="https://github.com/user-attachments/assets/c8bce7ec-99b5-45a6-94ed-612e9b672506" />
