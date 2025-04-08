@@ -98,6 +98,7 @@ resources, prompts, tools, sampling이 그것이다.
 <br/>
 
 (5) MCP 사용 가이드   
+
 [클로드 데스크탑에서 MCP 사용]   
 1. 클로드 데스크탑을 다운로드 한다.   
 다운로드 링크 : https://claude.ai/download   
