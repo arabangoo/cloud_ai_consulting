@@ -102,6 +102,7 @@ resources, prompts, tools, sampling이 그것이다.
 1. 클로드 데스크탑을 다운로드 한다.   
 다운로드 링크 : https://claude.ai/download   
 <br/>
+
 2. "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.
 ![image_15](https://github.com/user-attachments/assets/e736e217-b1bf-4e8e-9639-000f77f26ecf)   
 <img width="1000" alt="image_16" src="https://github.com/user-attachments/assets/531037b7-3bae-40c2-a9a4-2830757c9974" />
