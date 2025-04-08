@@ -48,15 +48,15 @@ MCP는 크게 MCP 호스트(Host), MCP 서버(Server), MCP 클라이언트(Clien
 (3) MCP 서버 리포지토리      
 1. smithery 웹사이트 - https://smithery.ai/             
 <img width="1600" alt="image_9" src="https://github.com/user-attachments/assets/a067feb4-6859-4793-9a92-5a865d7c997b" />
-<br/>
+<br/><br/>
 
 2. glama 웹사이트 - https://glama.ai/mcp/servers      
 <img width="1200" alt="image_10" src="https://github.com/user-attachments/assets/9800f1bd-6d29-4f58-ad0b-58e79028fb39" />
-<br/>
+<br/><br/>
 
 3. pulsemcp 웹사이트 - https://www.pulsemcp.com/
 <img width="1400" alt="image_11" src="https://github.com/user-attachments/assets/221efa40-26c7-4f91-abbe-c8d1db4340c8" />
-<br/>
+<br/><br/>
 
 ---
 <br/>
@@ -106,7 +106,7 @@ resources, prompts, tools, sampling이 그것이다.
 2. "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.
 ![image_15](https://github.com/user-attachments/assets/e736e217-b1bf-4e8e-9639-000f77f26ecf)   
 <img width="1000" alt="image_16" src="https://github.com/user-attachments/assets/531037b7-3bae-40c2-a9a4-2830757c9974" />
-<br/>   
+<br/><br/>   
    
 3. 현재 smithery.ai와 같은 MCP 서버 사이트에서 원하는 MCP 서버를 선택한다.         
 smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.         
@@ -118,24 +118,24 @@ smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.
 "Claude" 항목을 선택 후 "npm"이라는 항목에서 인스톨 명령어를 확인한 후 cmd창에서 실행한다.      
 <img width="800" alt="image_17" src="https://github.com/user-attachments/assets/d607a881-409a-4691-805d-3ed6f127f4ab" />    
 <img width="1000" alt="image_18" src="https://github.com/user-attachments/assets/c3e3a3e0-add6-4512-aa06-5f7153d66e8e" />   
-<br/>
+<br/><br/>
 
 다른 방법으로는 JSON 내용을 복사한 후 클로드의 설정 편집을 클릭하자.   
 <img width="800" alt="image_19" src="https://github.com/user-attachments/assets/b91beadd-4547-48fc-8757-78d75ddebd0c" />
 <img width="800" alt="image_20" src="https://github.com/user-attachments/assets/c8bce7ec-99b5-45a6-94ed-612e9b672506" />
-<br/>
+<br/><br/>
 
 클로드 폴더가 열리고 "claude_desktop_config.json" 파일이 확인되면       
 메모장으로 파일을 열어 json 내용을 기입한다.          
 <img width="800" alt="image_21" src="https://github.com/user-attachments/assets/6d1475c6-4332-49f2-a91b-b438ccef2765" />
-<br/>
+<br/><br/>
 
 위에서 설명한 방법 두 개 중 하나만 수행하면 되고 중복해서 수행하는 일은 없도록 하자.   
                 
 일단 위와 같이 MCP 서버를 적용하면 클로드 데스크탑은 다시 재시작을 해야한다.   
 그러면 아래와 같이 망치 아이콘이 확인될 텐데 MCP 서버가 적용되었다는 뜻이다.    
 <img width="700" alt="image_22" src="https://github.com/user-attachments/assets/299cb835-5586-4702-b602-5c449692ee25" />
-<br/>
+<br/><br/>
 
 프롬프트를 기입하면 MCP 서버를 허용하겠냐는 팝업창이 뜨는데 허용해주면 된다.   
 올바른 프롬프트만 기입하면 MCP 서버가 실행되고 사용자의 지시를 따르기 위해 OS 명령어를 실행한다.        
