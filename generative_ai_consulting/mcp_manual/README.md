@@ -141,6 +141,6 @@ smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.
 프롬프트를 기입하면 MCP 서버를 허용하겠냐는 팝업창이 뜨는데 허용해주면 된다.   
 올바른 프롬프트만 기입하면 MCP 서버가 실행되고 사용자의 지시를 따르기 위해 OS 명령어를 실행한다.        
 그리고 잠시 기다리면 클로드 데스크탑에 응답 결과를 표시하기 시작한다.    
-<img width="1000" alt="image_23" src="https://github.com/user-attachments/assets/6afb7dc6-dd2d-4446-a42c-ed4635e9b3af" />
+<img width="800" alt="image_23" src="https://github.com/user-attachments/assets/6afb7dc6-dd2d-4446-a42c-ed4635e9b3af" />
   
       
