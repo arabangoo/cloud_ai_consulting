@@ -118,7 +118,7 @@ smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.
 "Claude" 항목을 선택 후 "npm"이라는 항목에서 인스톨 명령어를 확인한 후 cmd창에서 실행한다.      
 <img width="800" alt="image_17" src="https://github.com/user-attachments/assets/d607a881-409a-4691-805d-3ed6f127f4ab" />    
 <img width="1000" alt="image_18" src="https://github.com/user-attachments/assets/c3e3a3e0-add6-4512-aa06-5f7153d66e8e" />   
-<br/><br/>
+<br/>
 
 다른 방법으로는 JSON 내용을 복사한 후 클로드의 설정 편집을 클릭하자.   
 <img width="800" alt="image_19" src="https://github.com/user-attachments/assets/b91beadd-4547-48fc-8757-78d75ddebd0c" />
