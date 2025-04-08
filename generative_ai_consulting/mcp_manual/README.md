@@ -28,20 +28,19 @@ MCP는 크게 MCP 호스트(Host), MCP 서버(Server), MCP 클라이언트(Clien
 [MCP의 주요 구성 요소]      
 1. MCP 호스트 → AI 모델을 실행하는 애플리케이션 (예: Claude, ChatGPT)      
 <img width="500" alt="image_4" src="https://github.com/user-attachments/assets/38ab667a-3219-4c09-8350-f946670d500e" />
-<br/>
+<br/><br/>
                  
 2. MCP 클라이언트 → MCP 서버와 연결되어 데이터를 주고받는 역할                  
 <img width="700" alt="image_5" src="https://github.com/user-attachments/assets/9c1e21b8-3923-4757-b72e-96a46a3a7b13" />
-<br/> 
+<br/><br/>
 
 3. MCP 서버 → 특정 기능을 제공하는 서비스 (예: 일정 관리, 이메일 전송 등)         
 <img width="600" alt="image_6" src="https://github.com/user-attachments/assets/b05578d9-f26f-42d9-8595-9a39ed33dd2a" />
-<br/>
+<br/><br/>
                                   
 4. 데이터 소스 → AI 모델이 접근할 수 있는 로컬 파일, 데이터베이스, 외부 API   
 <img width="800" alt="image_7" src="https://github.com/user-attachments/assets/dc341965-62ed-4997-9d75-08a6616e1286" />   
 <img width="1200" alt="image_8" src="https://github.com/user-attachments/assets/17fe0e65-0533-4f26-b2bb-7002ac3f2c7b" />
-<br/>
    
 ---
 <br/>
