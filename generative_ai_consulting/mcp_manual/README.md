@@ -175,7 +175,7 @@ smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.
 7. "File -> Preferences -> Cursor Settings" 경로에서 MCP 서버 설정을 할 수 있다.      
 <img width="800" alt="image_31" src="https://github.com/user-attachments/assets/eedc6250-0d4d-411e-9254-80daf275f60a" />
 <img width="800" alt="image_32" src="https://github.com/user-attachments/assets/3edeabe7-9446-4ce6-8865-1c2a2d466eda" />
-
+<br/>
 smithery.ai 사이트에서 Desktop Commander라는 MCP 서버를 선택하도록 하겠다.         
 Cursor 항목을 선택하고 JSON 내용을 복사한다.        
 <img width="1000" alt="image_33" src="https://github.com/user-attachments/assets/cf74201d-ad30-476a-9f7b-db9443593776" />
