@@ -148,33 +148,40 @@ smithery.ai에는 벌써 3천여개 가까운 MCP 서버가 등록되어 있다.
 다운로드 링크 : https://www.cursor.com/
 ![image_24](https://github.com/user-attachments/assets/c6c5e6cd-8520-4b27-8cf8-297e4c3f0356)
 <br/>
+
 2. 설치 파일을 실행하고 나서 아래와 같이 옵션을 설정한다.      
 설치시 CommandLine은 Installed "cursor"를 선택하면 된다.      
 ![image_25](https://github.com/user-attachments/assets/c3b9c05f-2d5d-446a-9f4e-f5354622c2d5)   
 ![image_26](https://github.com/user-attachments/assets/8ba36b45-4d90-43cb-b424-6bb79e7b283a)
 <br/>
+
 3. VSCode 확장 프로그램 연동이 되기까지 시간이 걸리니 기다린다.       
 ![image_27](https://github.com/user-attachments/assets/fc6916e0-e7ce-481e-add6-80c98470c59d)
 <br/>
+
 4. 다음은 Cursor 인공지능을 활용할 것이기에 "Help Improve Cursor" 옵션을 선택한다.   
 ![image_28](https://github.com/user-attachments/assets/c4615300-c4fe-47ba-aaf1-2df62973f438)
 <br/>
+
 5. 마지막으로 Cursor 로그인까지 완료하면 VSCode와 비슷한 화면이 뜨는 것을 확인할 수 있다.      
 이제부터는 VSCode가 아닌 인공지능 기반 코드 에디터 Cursor를 통해 코드 개발을 할 수 있다.   
 ![image_29](https://github.com/user-attachments/assets/4c8dadce-62a7-4056-a52f-ce3e16ac174a)
 <br/>
+
 6. 좌측 상단을 보면 VSCode와 연동된 확장 프로그램과 설치 가능한 확장 프로그램 목록을 확인할 수 있다.   
 ![image_30](https://github.com/user-attachments/assets/6b074335-5596-4522-ac35-a629a446268d)
 <br/>
+
 7. "File -> Preferences -> Cursor Settings" 경로에서 MCP 서버 설정을 할 수 있다.      
 <img width="800" alt="image_31" src="https://github.com/user-attachments/assets/eedc6250-0d4d-411e-9254-80daf275f60a" />
 <img width="800" alt="image_32" src="https://github.com/user-attachments/assets/3edeabe7-9446-4ce6-8865-1c2a2d466eda" />
-<br/>
+
 smithery.ai 사이트에서 Desktop Commander라는 MCP 서버를 선택하도록 하겠다.         
 Cursor 항목을 선택하고 JSON 내용을 복사한다.        
 <img width="1000" alt="image_33" src="https://github.com/user-attachments/assets/cf74201d-ad30-476a-9f7b-db9443593776" />
 <img width="600" alt="image_34" src="https://github.com/user-attachments/assets/0fee4fa4-78c6-462a-b23b-bdcc7a91e077" />
 <br/>
+
 MCP 서버가 제대로 적용이 된 것을 확인한 후 "ctrl+k" 단축키로 AI 채팅창을 띄우고 AI와 소통하며 MCP 서버가 작동하는 것을 확인한다.    
 <img width="1600" alt="image_35" src="https://github.com/user-attachments/assets/44cffb7f-8e99-45f9-a17c-6edd7e2b8138" />
 
