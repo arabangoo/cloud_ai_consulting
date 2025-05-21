@@ -1,6 +1,7 @@
 ## [구글 노트북LM 개념 및 활용]
 
 1. 구글 노트북LM이란 무엇인가?   
+      
 노트북LM은 구글이 개발한 AI 기반 연구 및 노트 작성 도구다.       
 이 도구의 핵심은 사용자가 업로드한 문서, PDF, 웹사이트, 유튜브 URL 등을       
 AI(제미나이)가 분석하여 질문에 답변하고, 다양한 형태의 콘텐츠를 생성해 주는 데 있다.       
@@ -12,7 +13,8 @@ AI(제미나이)가 분석하여 질문에 답변하고, 다양한 형태의 콘
 <img width="800" alt="image_1" src="https://github.com/user-attachments/assets/26e22755-274b-4c06-abc3-090d57a3c7f0" />   
 <br/>
 
-2. 구글 노트북LM의 특징과 기능     
+2. 구글 노트북LM의 특징과 기능   
+      
 (1) AI 기반 문서 질의응답       
 - 사용자가 업로드한 문서(예: PDF, Google Docs, 웹 링크 등)를 기반으로 Q&A를 지원       
 - 문서 전체를 읽지 않고도 핵심 내용을 빠르게 파악할 수 있도록 요약 및 정보 검색       
@@ -32,7 +34,8 @@ AI(제미나이)가 분석하여 질문에 답변하고, 다양한 형태의 콘
 <img width="600" alt="image_2" src="https://github.com/user-attachments/assets/e42a63b4-a5a3-41f2-ad79-a4dc877d1399" />
 <br/>
 
-4. 구글 노트북LM의 장점         
+4. 구글 노트북LM의 장점   
+               
 (1) 사용자가 제공한 신뢰 가능한 자료만을 기반으로 응답      
 (2) 인용 출처 표기 기능으로 정보의 신뢰도 강화      
 (3) 개인 맞춤형 지식 공간 구축 가능      
@@ -40,6 +43,7 @@ AI(제미나이)가 분석하여 질문에 답변하고, 다양한 형태의 콘
 <br/>
 
 5. 구글 노트북LM 사용 가이드   
+     
 (1) 노트북LM (https://notebooklm.google/) 사이트에 접속 후 새로운 source를 추가한다.      
 source로는 PDF 파일, 오디오 파일, 구글 드라이브, 웹사이트와 유튜브 링크, 텍스트 등이 있다.   
 <img width="1200" alt="image_3" src="https://github.com/user-attachments/assets/64e85b3a-a9ed-4b7c-8b67-ead8e03e55c1" />
