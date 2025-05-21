@@ -51,8 +51,8 @@ https://huggingface.co/
 ![image9](https://github.com/user-attachments/assets/34c2d1e3-03c8-46db-a746-d9c3cd058dc5)
 <br/>
 
-(9) 마지막으로 "HuggingChat"에 대해 알아보도록 하겠다.
-맨 우측 상단의 세 줄 아이콘을 클릭하고 "HuggingChat"을 선택한다.
+(9) 마지막으로 "HuggingChat"에 대해 알아보도록 하겠다.   
+맨 우측 상단의 세 줄 아이콘을 클릭하고 "HuggingChat"을 선택한다.   
 ![image10](https://github.com/user-attachments/assets/09e6891a-5a88-49a0-a897-3637aa65de69)
 <br/>
 
