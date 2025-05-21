@@ -34,7 +34,7 @@ AI(제미나이)가 분석하여 질문에 답변하고, 다양한 형태의 콘
          
 3. 타 서비스와의 비교   
 <img width="600" alt="image_2" src="https://github.com/user-attachments/assets/e42a63b4-a5a3-41f2-ad79-a4dc877d1399" />
-<br/>
+<br/><br/>
 
 4. 구글 노트북LM의 장점   
                
