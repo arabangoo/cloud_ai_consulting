@@ -65,7 +65,8 @@ https://huggingface.co/
 <br/><br/>
 
 2. 허깅페이스 기능 및 도구
-<br/>      
+<br/>
+    
 (1) Transformers 라이브러리   
 Hugging Face의 Transformers 라이브러리는 BERT, GPT-2, GPT-3, RoBERTa, T5 등   
 다양한 NLP 모델들을 제공하는 오픈소스 라이브러리다.          
