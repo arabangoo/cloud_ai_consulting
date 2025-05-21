@@ -63,7 +63,7 @@ AI와 Chat을 할 수 있고 팟캐스트 형식의 대화를 생성할 수도 �
 (4) 분석한 source 내용을 바탕으로 마인드맵을 만들 수도 있다.      
 <img width="1200" alt="image_6" src="https://github.com/user-attachments/assets/39c75297-f784-4050-b598-455e6234ad7c" />
 <br/>
-
-(5) 구글 노트북LM 사용 가이드      
-기업용 NotebookLM을 사용하려면 구글 클라우드를 통해 사용해야 한다.        
+   
+6. 기업용 구글 노트북LM               
+기업용 NotebookLM을 사용하려면 구글 클라우드를 통해 사용해야 한다.           
 <img width="1000" alt="image_7" src="https://github.com/user-attachments/assets/8cf10909-1c71-4fce-b6b3-e522ab5053b8" />
