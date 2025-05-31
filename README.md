@@ -3,7 +3,7 @@ https://arabangoo.com/
 <br/><br/>
 ### [AI Engineer Roadmap]
 https://roadmap.sh/ai-engineer 
-<br/>
+<br/><br/>
 ### [Generative AI Handbook]
 https://genai-handbook.github.io/   
 <br/>
