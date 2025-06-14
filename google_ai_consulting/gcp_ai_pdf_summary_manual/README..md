@@ -1,4 +1,4 @@
-## [Cloud Functions과 Vertex AI 연동을 통한 PDF 요약]    
+## [Cloud Run Functions과 Vertex AI 연동을 통한 PDF 요약]    
 
 GCP에서 PDF 요약 AI 서비스를 구축하는 절차는 아래와 같다.   
    
@@ -206,5 +206,5 @@ pdfplumber
 <br/>
 
 4. 논문 요약 테스트를 위해 arXiv 등의 논문 사이트에서 논문 PDF를 다운로드해서 테스트 해보자.       
-PDF 파일 요약 속도를 확인하며 너무 성능이 떨어지지 않게 Lambda 사양을 조절해주면 된다.      
+PDF 파일 요약 속도를 확인하며 너무 성능이 떨어지지 않게 Cloud Run Functions 사양을 조절해주면 된다.      
 ![image12](https://github.com/user-attachments/assets/1d63f609-b9a5-4fdc-85ad-93628d5208cd)
