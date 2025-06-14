@@ -177,8 +177,8 @@ pdfplumber
 5. 이제 코드에 맞는 환경변수를 설정하자.      
 "새 버전 수정 및 배포"를 클릭한 후 "변수 및 보안 비밀" 항목에서 환경 변수를 설정하면 된다.       
 <img width="1000" alt="image_12" src="https://github.com/user-attachments/assets/457f0963-d4db-463f-9e10-39d86c31daa8" />
-<br/>
-
+<br/><br/>
+   
 6. Cloud Run Functions에서 Cloud Storage를 트리거로 지정한다.
 ![image_13](https://github.com/user-attachments/assets/94acef23-2493-4677-9873-c7410fb996e4)
 <br/>
