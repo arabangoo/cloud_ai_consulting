@@ -52,7 +52,7 @@ Cloud Run Functions은 서버에서 따로 컨테이너 띄워서 라이브러�
 main.py에 실제 코드를 작성하고 requirements.txt에 라이브러리를 기입해주면 된다.        
 <img width="1000" alt="image_10" src="https://github.com/user-attachments/assets/e8b3a3c2-30dc-4177-9c21-9684952078c4" />
 <img width="1000" alt="image_11" src="https://github.com/user-attachments/assets/52484aa0-bdb3-4bbe-8285-37e40599ede6" />
-<br/>
+<br/><br/>
 
 3. Cloud Run Functions에서 사용할 main.py 코드는 아래와 같다.      
 
