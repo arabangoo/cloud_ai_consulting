@@ -15,7 +15,7 @@ GCP에서 PDF 요약 AI 서비스를 구축하는 절차는 아래와 같다.
                 
 (2) Cloud Storage 버킷 생성  
 
-1. Cloud Functions과 연동할 Cloud Storage 버킷과 폴더를 생성한다.           
+1. Cloud Run Functions과 연동할 Cloud Storage 버킷과 폴더를 생성한다.           
 <img width="1200" alt="image_2" src="https://github.com/user-attachments/assets/35759e8f-6778-4721-a925-970e17c42422" />
    
 ![image_3](https://github.com/user-attachments/assets/05b026e6-c342-4a17-ba30-8822f8dd6e29)   
