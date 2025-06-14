@@ -45,7 +45,7 @@ Vertex AI API를 활성화 하면 구글의 AI 모델은 전부 사용할 수 �
 함수 생성 중간에 Cloud Build API를 활성화 하라는 문구가 뜨면 활성화 하자.   
 <img width="1400" alt="image_8" src="https://github.com/user-attachments/assets/db926780-0819-4333-a4ef-dfcb0a09d445" />
 <img width="800" alt="image_9" src="https://github.com/user-attachments/assets/3ca02461-8095-46ff-a9a2-8f32dd17cfe8" />
-<br/>
+<br/><br/>
 
 2. 다음은 Cloud Run Functions의 코드를 작성해준다.      
 Cloud Run Functions은 서버에서 따로 컨테이너 띄워서 라이브러리를 패키징 해줄 필요가 없다.      
