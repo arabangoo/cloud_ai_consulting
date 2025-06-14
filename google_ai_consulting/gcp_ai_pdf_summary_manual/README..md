@@ -25,7 +25,7 @@ GCP에서 PDF 요약 AI 서비스를 구축하는 절차는 아래와 같다.
 
 1. Vertex AI Studio를 활성화한다.      
 <img width="500" alt="image_4" src="https://github.com/user-attachments/assets/d749437b-fb25-4e61-8eb0-822ac784d4c4" />
-<br/>
+<br/><br/>
                                 
 2. Vertex AI Studio의 모델 가든에서 원하는 AI 모델이 있는지 확인한다.     
 ![image_5](https://github.com/user-attachments/assets/0119cd68-186e-4a8e-b3df-ea49c7ab14db)
