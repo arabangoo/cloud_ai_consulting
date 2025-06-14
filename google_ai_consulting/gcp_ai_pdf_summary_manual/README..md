@@ -35,7 +35,7 @@ GCP에서 PDF 요약 AI 서비스를 구축하는 절차는 아래와 같다.
 3. Vertex AI API를 활성화한다.   
 Vertex AI API를 활성화 하면 구글의 AI 모델은 전부 사용할 수 있다.
 <img width="600" alt="image_7" src="https://github.com/user-attachments/assets/7182d7b5-65cb-4150-a11a-cc535cf92a63" />
-<br/>
+<br/><br/>
 
 (4) Cloud Run Functions 함수 생성  
 
