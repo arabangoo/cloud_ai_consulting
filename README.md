@@ -12,7 +12,7 @@ https://udlbook.github.io/udlbook/
 <br/>
 ### [Stanford HAI AI Index]
 https://hai.stanford.edu/ai-index
-<br/>
+<br/><br/>
 ### [AI Model & API Providers Analysis]   
 https://artificialanalysis.ai/
 <br/><br/>
