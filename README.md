@@ -10,6 +10,9 @@ https://genai-handbook.github.io/
 ### [MIT Deep Learning]   
 https://udlbook.github.io/udlbook/      
 <br/>
+### [Stanford HAI AI Index]
+https://hai.stanford.edu/ai-index
+<br/>
 ### [AI Model & API Providers Analysis]   
 https://artificialanalysis.ai/
 <br/><br/>
