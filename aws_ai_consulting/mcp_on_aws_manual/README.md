@@ -50,12 +50,12 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
 명령어 (2) : source .venv/bin/activate      
 명령어 (3) : uv add "mcp[cli]" httpx   
 <img width="1000" alt="image5" src="https://github.com/user-attachments/assets/206272b4-3c69-453f-b243-dbfc0a55e57c" />
-<br/>
+<br/><br/>
 
 (9) MCP 서버를 Amazon Q CLI에 연결한다. (mcp.json 설정)   
 명령어 (1) : mkdir -p ~/.aws/amazonq   
 명령어 (2) : vi ~/.aws/amazonq/mcp.json   
-<br/><br/>
+<br/>
 
 (10) vi로 mcp.json 파일을 만들어준다.       
 이때 소스파일을 clone했던 경로를 잘 확인하고 수정해준다.      
