@@ -7,7 +7,7 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
    
 (1) AWS에서 우분투 리눅스 EC2 한 개를 생성한 후 접속한다.   
 <img width="600" alt="image1" src="https://github.com/user-attachments/assets/b4e3c26d-93b1-4d78-b191-ff9422ba2b2e" />
-<br/>
+<br/><br/>
                 
 (2) 시스템 업데이트 및 필수 패키지 설치를 진행한다.   
 명령어 (1) : apt update && sudo apt upgrade -y   
