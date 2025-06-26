@@ -38,7 +38,7 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
 (6) python 가상환경을 만들어주는 uv를 설치한다.   
 명령어 (1) : curl -LsSf https://astral.sh/uv/install.sh | sh   
 <img width="1200" alt="image4" src="https://github.com/user-attachments/assets/384f13f2-0fa2-4787-95d2-09fc1c4bc404" />
-<br/>
+<br/><br/>
 
 (7) uv 설치 후 터미널 재시작을 하거나 아래 명령어를 실행한다.   
 명령어 (1) : source ~/.bashrc   
