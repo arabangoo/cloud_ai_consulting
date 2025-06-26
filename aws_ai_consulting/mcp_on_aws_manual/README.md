@@ -81,7 +81,7 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
 (11) MCP 서버를 백그라운드에서 실행하도록 아래 명령어를 실행한다.    
 MCP 서버는 Amazon Q CLI가 연결될 수 있도록 백그라운드에서 실행중이어야 한다.   
 명령어 (1) : uv run weather.py    
-<br/><br/>
+<br/>
 
 (12) 터미널을 그대로 두고 새로운 탭이나 세션을 연다.   
 새 터미널 세션에서 Amazon Q CLI를 통해 weather MCP를 테스트하겠다.   
