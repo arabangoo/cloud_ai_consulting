@@ -26,7 +26,7 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
 명령어 (2) : q login   
 <img width="400" alt="image2" src="https://github.com/user-attachments/assets/acbaccc0-c134-4de8-a72c-66e4ca0bc721" />   
 
-<img width="500" alt="image3" src="https://github.com/user-attachments/assets/b5ffe8ea-b28a-4c62-b491-4f4288dd2aba" />
+<img width="400" alt="image3" src="https://github.com/user-attachments/assets/b5ffe8ea-b28a-4c62-b491-4f4288dd2aba" />
 <br/>
 
 (5) GitHub에서 AWS 샘플 MCP 서버 코드를 클론한다.   
