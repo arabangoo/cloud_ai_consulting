@@ -76,30 +76,28 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
 }
 ```
 <img width="800" alt="image6" src="https://github.com/user-attachments/assets/67a58b95-29e8-496c-a14b-a48e5a92936a" />
-<br/><br/>
-
+<br/><br/><br/>
 
 (11) MCP 서버를 백그라운드에서 실행하도록 아래 명령어를 실행한다.    
 MCP 서버는 Amazon Q CLI가 연결될 수 있도록 백그라운드에서 실행중이어야 한다.   
 명령어 (1) : uv run weather.py    
-<br/>
+<br/><br/>
 
 (12) 터미널을 그대로 두고 새로운 탭이나 세션을 연다.   
 새 터미널 세션에서 Amazon Q CLI를 통해 weather MCP를 테스트하겠다.   
 명령어 (1) : q chat      
 <img width="600" alt="image7" src="https://github.com/user-attachments/assets/de0d3cd3-ad2f-4d1a-ba69-c93378561bcf" />
-<br/>
+<br/><br/>
 
 (13) 아래와 같은 프롬프트를 입력해본다.          
 액션을 실행하겠냐는 메시지가 뜨면 't'를 입력한다.         
 명령어 (1) : What are the active weather alerts in Texas?      
 <img width="700" alt="image8" src="https://github.com/user-attachments/assets/acb12ecf-25cd-415f-a5f4-73946cc7fc40" />
-<br/>
+<br/><br/>
 
 (14) AI 응답이 뜨면 MCP 서버 테스트에 성공한 것이다.   
 <img width="1200" alt="image9" src="https://github.com/user-attachments/assets/137dc10f-453e-4541-b08d-38225771e624" />
-<br/>
+<br/><br/>
 
 (15) 한국어로 말해달라고 해도 잘 대답해준다.   
 <img width="1000" alt="image10" src="https://github.com/user-attachments/assets/87de3402-9d85-40c2-8a60-b6f25f5c37cb" />
-<br/>
