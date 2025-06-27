@@ -10,7 +10,7 @@ Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실�
 <br/><br/>
                 
 (2) 시스템 업데이트 및 필수 패키지 설치를 진행한다.   
-명령어 (1) : apt update && sudo apt upgrade -y   
+명령어 (1) : apt update && apt upgrade -y   
 명령어 (2) : apt install -y curl git python3 python3-venv unzip   
 <br/>
         
