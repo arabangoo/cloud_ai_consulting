@@ -1,6 +1,6 @@
 ## [MCP on AWS 활용]    
 
-본 AWS on MCP 매뉴얼은 Amazon Q Developer CLI를 활용한다는 전제 하에 작성한다.      
+본 MCP on AWS 매뉴얼은 Amazon Q Developer CLI를 활용한다는 전제 하에 작성한다.      
 Amazon Q Developer CLI는 WSL이나 EC2를 통해 우분투 리눅스에서 실행하도록 한다.      
 여기서는 AWS의 우분투 리눅스 EC2를 활용하도록 하겠다.       
 <br/>
