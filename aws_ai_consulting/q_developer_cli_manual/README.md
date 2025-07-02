@@ -1,6 +1,6 @@
 ## [Amazon Q Developer CLI 활용]    
 
-[Amazon Q CLI로 가능한 것들]
+[Amazon Q Developer CLI로 가능한 것들]
 1. AWS 리소스 생성, 삭제, 수정
 2. 로그 조회 및 분석
 3. 작업 스케줄링 설정
@@ -30,7 +30,7 @@
 <img width="400" alt="image3" src="https://github.com/user-attachments/assets/b5ffe8ea-b28a-4c62-b491-4f4288dd2aba" />
 <br/>
 
-(5) 아래 명령어로 Amazon Q CLI 채팅을 시작하면 된다.   
+(5) 아래 명령어로 Amazon Q Developer CLI 채팅을 시작하면 된다.   
 명령어 (1) : q chat      
 <img width="600" alt="image7" src="https://github.com/user-attachments/assets/de0d3cd3-ad2f-4d1a-ba69-c93378561bcf" />
 <br/><br/>
