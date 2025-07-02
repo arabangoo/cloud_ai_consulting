@@ -28,7 +28,7 @@
 <img width="400" alt="image2" src="https://github.com/user-attachments/assets/acbaccc0-c134-4de8-a72c-66e4ca0bc721" />   
 
 <img width="400" alt="image3" src="https://github.com/user-attachments/assets/b5ffe8ea-b28a-4c62-b491-4f4288dd2aba" />
-<br/>
+<br/><br/>
 
 (5) 아래 명령어로 Amazon Q Developer CLI 채팅을 시작하면 된다.   
 명령어 (1) : q chat      
