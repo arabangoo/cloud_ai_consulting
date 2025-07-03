@@ -11,7 +11,7 @@
 (1) 우선 로컬 PC에서 아래 명령어로 Node.js와 npm을 설치하도록 하자.      
 명령어 (1) : winget install OpenJS.NodeJS        
 <img width="800" alt="image_2" src="https://github.com/user-attachments/assets/3044a6c0-f2d1-46c2-aefd-456610859a58" />
-<br/><br/>
+<br/>
                 
 (2) Node.js와 npm 버전을 확인하자.         
 제미나이 CLI 정상 실행을 위해서는 Node.js 버전이 18 이상이어야 한다.         
