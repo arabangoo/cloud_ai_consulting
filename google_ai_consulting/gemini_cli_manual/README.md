@@ -28,12 +28,12 @@
       
 (4) 세 가지 로그인 방법 중 하나를 선택해 제미나이 CLI에 로그인한다.         
 <img width="1000" alt="image_5" src="https://github.com/user-attachments/assets/c508c853-9abf-4ecd-a6a3-adf3d8f0e596" />
-<br/><br/>
+<br/>
 
 (5) 프롬프트를 입력해서 제미나이 CLI와 실제로 대화해본다.         
 제미나이 CLI가 사용자 요구에 맞춰 로컬 PC 설정 파일까지 수정하는 것도 확인 가능하다.          
 <img width="900" alt="image_6" src="https://github.com/user-attachments/assets/396f71c3-bc49-4b96-8474-40b8c926364c" />
-<br/><br/>
+<br/>
 
 (6) 프롬프트창을 따로 열지 않고 "gemini --prompt" 명령어로 바로 프롬프트를 입력할 수도 있다.      
 <img width="500" alt="image_7" src="https://github.com/user-attachments/assets/8ed22210-1830-4737-8a86-12c4aec2ca08" />
