@@ -2,7 +2,7 @@
 
 제미나이 CLI는 터미널 환경에서 Gemini AI 모델과 직접 상호작용할 수 있게 해주는 도구다.   
 비슷한 도구로는 오픈AI의 ‘코덱스 CLI’, 앤스로픽의 ‘클로드 코드’, AWS의 ‘아마존 Q 디벨로퍼 CLI’가 있다.
-<img width="1500" alt="image_1" src="https://github.com/user-attachments/assets/98a5de30-7d7a-43b1-b8a9-194b9a24c72b" />
+<img width="1200" alt="image_1" src="https://github.com/user-attachments/assets/98a5de30-7d7a-43b1-b8a9-194b9a24c72b" />
 <br/>
 
 ---
