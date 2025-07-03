@@ -37,7 +37,7 @@
 
 (6) 프롬프트창을 따로 열지 않고 "gemini --prompt" 명령어로 바로 프롬프트를 입력할 수도 있다.      
 <img width="500" alt="image_7" src="https://github.com/user-attachments/assets/8ed22210-1830-4737-8a86-12c4aec2ca08" />
-<br/><br/>
+<br/>
 
 ---
 
