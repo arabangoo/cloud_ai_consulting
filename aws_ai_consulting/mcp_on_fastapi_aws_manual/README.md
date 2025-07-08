@@ -36,7 +36,7 @@
 (7) 도커 컨테이너의 상태를 확인한다.      
 명령어 (1) : docker ps      
 <img width="900" alt="image3" src="https://github.com/user-attachments/assets/6940eb5a-b933-4f28-b273-e4ff0da8ec36" />
-<br/>
+<br/><br/> 
 
 (8) 웹브라우저에서 아래 주소를 입력하고 출력 내용을 확인한다.   
 이미지와 같이 { "status": "healthy" } 값이 나오면 정상인 것이다.       
