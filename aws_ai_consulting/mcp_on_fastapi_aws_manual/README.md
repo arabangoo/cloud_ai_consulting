@@ -76,16 +76,16 @@ http://<alb_dns_name>/health
 예시 파일에는 desktop-commander라는 기존 MCP 서버에 추가로 weather-server라는 MCP 서버를 추가했다.            
 weather-server를 호출하는 ALB 주소는 본인이 생성한 ALB 주소에 맞게 수정해줘야 한다.         
 <img width="800" alt="image8" src="https://github.com/user-attachments/assets/805b9c3b-9e68-480c-8ff5-ed58e255d204" />
-<br/>
+<br/><br/>
 
 (15) 일단 MCP 서버를 적용하면 클로드 데스크탑 재시작을 해야한다.      
 그러면 망치 아이콘이 확인될 텐데 MCP 서버가 적용되었다는 뜻이다.           
 <img width="700" alt="image9" src="https://github.com/user-attachments/assets/41fc84af-929e-4966-9998-006beaa7a55b" />
-<br/>
+<br/><br/>
 
 (16) 미국 지역 날씨를 조회해보면 정상적으로 AI 응답이 출력되는 것을 확인할 수 있다.       
-<img width="1000" alt="image10" src="https://github.com/user-attachments/assets/7502bb14-0a3c-4c33-a39a-1fc49dd118a1" />
-<br/>
+<img width="800" alt="image10" src="https://github.com/user-attachments/assets/7502bb14-0a3c-4c33-a39a-1fc49dd118a1" />
+<br/><br/>
 
 (17) MCP 서버를 Smithery에 올려놓고 호출하면 클로드 데스크탑 설정 json에 들어갈 내용도 간단해진다.   
 MCP 서버가 퍼블릭 공간에 올려놓을 수 있는 내용이면 smithery에 올려놓고 호출하자.    
