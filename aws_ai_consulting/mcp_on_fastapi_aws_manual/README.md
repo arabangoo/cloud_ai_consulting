@@ -84,7 +84,7 @@ weather-server를 호출하는 ALB 주소는 본인이 생성한 ALB 주소에 �
 <br/><br/>
 
 (16) 미국 지역 날씨를 조회해보면 정상적으로 AI 응답이 출력되는 것을 확인할 수 있다.       
-<img width="800" alt="image10" src="https://github.com/user-attachments/assets/7502bb14-0a3c-4c33-a39a-1fc49dd118a1" />
+<img width="700" alt="image10" src="https://github.com/user-attachments/assets/7502bb14-0a3c-4c33-a39a-1fc49dd118a1" />
 <br/><br/>
 
 (17) MCP 서버를 Smithery에 올려놓고 호출하면 클로드 데스크탑 설정 json에 들어갈 내용도 간단해진다.   
