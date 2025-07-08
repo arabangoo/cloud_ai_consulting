@@ -54,7 +54,7 @@ http://<ec2_public_ip>:8000/health
 (10) 웹브라우저에서 아래 주소를 입력하고 출력 내용을 확인한다.          
 만약 EC2 IP로는 정상 출력이 되는데 ALB 주소로 정상 출력이 안 되면 보안그룹이나 리스너가 잘못 등록된 것이니 확인해본다.      
 http://<alb_dns_name>/health         
-<br/><br/>
+<br/>
 
 (11) ALB와 대상그룹까지 만들어지면 클로드 데스크탑을 통해 MCP 서버와 통신할 수 있다.   
 일단 클로드 데스크탑을 설치하기 전에 로컬 PC에서 아래 명령어로 Node.js와 npm을 설치하도록 하자.   
@@ -64,19 +64,19 @@ http://<alb_dns_name>/health
 
 (12) 클로드 데스크탑을 다운로드 한다.   
 다운로드 링크 : https://claude.ai/download   
-<br/><br/>
+<br/>
 
 (13) "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.               
 ![image6](https://github.com/user-attachments/assets/37a8e3a8-817c-4599-a470-0b809121f959)   
 <img width="800" alt="image7" src="https://github.com/user-attachments/assets/60b4753d-fb00-43af-bfa9-47e990469be7" />   
-<br/><br/>
+<br/>
 
 (14) 클로드 폴더가 열리고 "claude_desktop_config.json" 파일을 확인한다.       
 메모장으로 해당 파일을 열어 json 내용을 기입한다.      
 예시 파일에는 desktop-commander라는 기존 MCP 서버에 추가로 weather-server라는 MCP 서버를 추가했다.            
 weather-server를 호출하는 ALB 주소는 본인이 생성한 ALB 주소에 맞게 수정해줘야 한다.         
 <img width="800" alt="image8" src="https://github.com/user-attachments/assets/805b9c3b-9e68-480c-8ff5-ed58e255d204" />
-<br/><br/>
+<br/>
 
 (15) 일단 MCP 서버를 적용하면 클로드 데스크탑 재시작을 해야한다.      
 그러면 망치 아이콘이 확인될 텐데 MCP 서버가 적용되었다는 뜻이다.           
