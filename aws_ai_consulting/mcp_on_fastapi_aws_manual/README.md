@@ -97,7 +97,6 @@ Smithery는 MCP 클라이언트만 간편하게 배포하는 것이고 백엔드
   "args": ["-e", "매우 긴 JavaScript 코드..."]
 }
 ```
-<br/>
 
 [smithery에서 호출하는 경우]
 ```txt
