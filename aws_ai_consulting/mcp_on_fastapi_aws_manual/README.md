@@ -5,28 +5,23 @@
    
 (1) AWS에서 우분투 리눅스 EC2 한 개를 생성한 후 접속한다.     
 <img width="600" alt="image1" src="https://github.com/user-attachments/assets/b4e3c26d-93b1-4d78-b191-ff9422ba2b2e" />
-<br/>
-                
+<br/>                
 (2) 시스템 업데이트를 진행한다.   
 명령어 (1) : apt update && apt upgrade -y            
-<br/>
-        
+<br/>        
 (3) 도커를 설치하고 활성화한다.   
 명령어 (1) : apt install -y docker.io   
 명령어 (2) : systemctl start docker   
 명령어 (3) : systemctl enable docker    
 <br/>
-
 (4) 파일질라 등을 통해 필수 파일을 서버로 옮겨놓는다.   
 그 뒤, 해당 경로로 이동한다.    
 필수 파일 : Dockerfile / main.py / requirements.txt   
 <img width="500" alt="image2" src="https://github.com/user-attachments/assets/f6c20980-1c23-41b3-a9bd-e68d4968eb70" />
 <br/>
-
 (5) 도커 이미지를 빌드한다.   
 명령어 (1) : docker build -t fastapi-mcp .   
 <br/>
-
 (6) 컨테이너를 실행한다.    
 -d 옵션으로 인해 컨테이너가 백그라운드로 영구 실행된다.   
 --restart always 옵션으로 인해 서버가 중지되었다가 다시 시작되면 컨테이너도 재실행된다.   
