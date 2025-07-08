@@ -19,7 +19,7 @@
 
 (4) 파일질라 등을 통해 필수 파일을 서버로 옮겨놓는다.   
 그 뒤, 해당 경로로 이동한다.    
-필수 파일 : Dockerfile / main.py / requirements.txt
+필수 파일 : Dockerfile / main.py / requirements.txt   
 <img width="500" alt="image2" src="https://github.com/user-attachments/assets/f6c20980-1c23-41b3-a9bd-e68d4968eb70" />
 <br/>
 
