@@ -68,7 +68,7 @@ http://<alb_dns_name>/health
 
 (13) "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.               
 ![image6](https://github.com/user-attachments/assets/37a8e3a8-817c-4599-a470-0b809121f959)   
-<img width="800" alt="image7" src="https://github.com/user-attachments/assets/60b4753d-fb00-43af-bfa9-47e990469be7" />   
+<img width="1000" alt="image7" src="https://github.com/user-attachments/assets/60b4753d-fb00-43af-bfa9-47e990469be7" />   
 <br/>
 
 (14) 클로드 폴더가 열리고 "claude_desktop_config.json" 파일을 확인한다.       
