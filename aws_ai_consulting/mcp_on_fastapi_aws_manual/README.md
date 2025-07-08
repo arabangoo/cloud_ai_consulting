@@ -64,7 +64,7 @@ http://<alb_dns_name>/health
 
 (12) 클로드 데스크탑을 다운로드 한다.   
 다운로드 링크 : https://claude.ai/download   
-<br/>
+<br/><br/>
 
 (13) "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.               
 ![image6](https://github.com/user-attachments/assets/37a8e3a8-817c-4599-a470-0b809121f959)   
@@ -85,6 +85,7 @@ weather-server를 호출하는 ALB 주소는 본인이 생성한 ALB 주소에 �
 
 (16) 미국 지역 날씨를 조회해보면 정상적으로 AI 응답이 출력되는 것을 확인할 수 있다.       
 <img width="1000" alt="image10" src="https://github.com/user-attachments/assets/7502bb14-0a3c-4c33-a39a-1fc49dd118a1" />
+<br/>
 
 (17) MCP 서버를 Smithery에 올려놓고 호출하면 클로드 데스크탑 설정 json에 들어갈 내용도 간단해진다.   
 MCP 서버가 퍼블릭 공간에 올려놓을 수 있는 내용이면 smithery에 올려놓고 호출하자.    
