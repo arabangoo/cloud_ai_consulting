@@ -60,11 +60,11 @@ http://<alb_dns_name>/health
 일단 클로드 데스크탑을 설치하기 전에 로컬 PC에서 아래 명령어로 Node.js와 npm을 설치하도록 하자.   
 명령어 (1) : winget install OpenJS.NodeJS   
 <img width="900" alt="image5" src="https://github.com/user-attachments/assets/a6bb1548-c429-4c58-9abc-3969123cbf1a" />
-<br/>
+<br/><br/>
 
 (12) 클로드 데스크탑을 다운로드 한다.   
 다운로드 링크 : https://claude.ai/download   
-<br/><br/>
+<br/>
 
 (13) "파일 -> 설정 -> 개발자" 경로에서 MCP를 설정할 수 있다.               
 ![image6](https://github.com/user-attachments/assets/37a8e3a8-817c-4599-a470-0b809121f959)   
