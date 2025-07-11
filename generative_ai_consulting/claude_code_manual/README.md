@@ -13,13 +13,13 @@
 (2) wsl 버전이 낮다면 우선 아래 링크를 통해 wsl을 업데이트 하자.   
 "wsl -l -v" 명령어를 실행했을 때 리눅스 버전이 2로 나오면 된다.          
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi           
-<img width="500" height="100" alt="image_2" src="https://github.com/user-attachments/assets/063f41a9-cb75-402f-8dce-d31691b283fa" />
+<img width="500" height="100" alt="image_2" src="https://github.com/user-attachments/assets/289e740c-17e8-4791-b292-ab15f0eaf506" />
 <br/>
             
 (3) wsl 명령어로 우분투에 진입하면 되지만 기본 배포판 충돌 문제가 나면 아래 순서로 해결한다.   
 명령어 (1) : wsl --set-default Ubuntu   
 명령어 (2) : wsl      
-<img width="400" height="140" alt="image_3" src="https://github.com/user-attachments/assets/c91766ab-8d0b-4f6e-a798-e8bb6172b316" />
+<img width="400" height="140" alt="image_3" src="https://github.com/user-attachments/assets/d1100879-e97a-4337-8c8f-71418772dbcf" />
 <br/>
          
 (4) 이제 wsl 리눅스 환경 내에서 Node.js를 설치하도록 하자.    
@@ -35,7 +35,7 @@ https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 클로드코드가 설치되면 claude 명령어로 실행하고 로그인과 환경설정을 하면 된다.   
 명령어 (1) : npm install -g @anthropic-ai/claude-code    
 명령어 (2) : claude            
-<img width="1000" height="400" alt="image_5" src="https://github.com/user-attachments/assets/4dad1adb-ca0e-4997-be49-1797416dc457" />
+<img width="1000" height="400" alt="image_5" src="https://github.com/user-attachments/assets/ec6bbafc-f925-4945-9389-954c4dcf6697" />
 <img width="1000" height="300" alt="image_6" src="https://github.com/user-attachments/assets/cc4c31f7-c65f-4f7f-90c1-0c66c6a39a62" />
 <br/>
 
