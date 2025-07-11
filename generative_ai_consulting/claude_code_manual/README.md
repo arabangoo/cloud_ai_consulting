@@ -28,14 +28,14 @@ https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 명령어 (3) : apt-get install -y nodejs   
 명령어 (4) : node --version   
 명령어 (5) : npm --version         
-<img width="300" height="100" alt="image_4" src="https://github.com/user-attachments/assets/0dc9f3f2-2930-4adc-b4f6-26cd67fc2c14" />
+<img width="300" height="100" alt="image_4" src="https://github.com/user-attachments/assets/3919076c-9bd6-4f75-a934-821981b38adc" />
 <br/>
     
 (5) 다음은 wsl 리눅스 환경 내에서 클로드코드를 설치하도록 하자.   
 클로드코드가 설치되면 claude 명령어로 실행하고 로그인과 환경설정을 하면 된다.   
 명령어 (1) : npm install -g @anthropic-ai/claude-code    
 명령어 (2) : claude            
-<img width="1000" height="400" alt="image_5" src="https://github.com/user-attachments/assets/ec6bbafc-f925-4945-9389-954c4dcf6697" />
+<img width="1000" height="400" alt="image_5" src="https://github.com/user-attachments/assets/ba3f33e6-96fc-4b49-93eb-254d5681751c" />
 <img width="1000" height="300" alt="image_6" src="https://github.com/user-attachments/assets/cc4c31f7-c65f-4f7f-90c1-0c66c6a39a62" />
 <br/>
 
