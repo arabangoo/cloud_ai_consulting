@@ -19,6 +19,9 @@ https://artificialanalysis.ai/
 ### [LLM Pricing Comparison & Calculator]
 https://llmpricecheck.com/
 <br/><br/>
+### [Humanity's Last Exam]
+https://agi.safe.ai/
+<br/><br/>
 ### [AI latest Research Papers]
 https://arxiv.org/list/cs.AI/recent
 <br/><br/>
