@@ -69,5 +69,5 @@ GitHub : https://github.com/somersby10ml/win-claude-code
    
 (2) VS Code에서 터미널창을 열고 클로드코드를 실행한다.   
 본인이 선호하는 환경에 접근해서 클로드코드를 사용할 수 있다.   
-<img width="1000" height="500" alt="image_10" src="https://github.com/user-attachments/assets/31fadc55-b35a-426c-b45a-feca6672a205" />
-<img width="600" height="500" alt="image_11" src="https://github.com/user-attachments/assets/863b621b-d6b9-47c2-8dbb-88a867baeed5" />
+<img width="900" height="400" alt="image_10" src="https://github.com/user-attachments/assets/31fadc55-b35a-426c-b45a-feca6672a205" />
+<img width="600" height="300" alt="image_11" src="https://github.com/user-attachments/assets/863b621b-d6b9-47c2-8dbb-88a867baeed5" />
