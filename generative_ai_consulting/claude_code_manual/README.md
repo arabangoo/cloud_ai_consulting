@@ -48,7 +48,6 @@ GitHub : https://github.com/somersby10ml/win-claude-code
 명령어 (1) : npm install -g @anthropic-ai/claude-code --ignore-scripts    
 명령어 (2) : npx win-claude-code@latest    
 <br/>
-
 (2) 윈도우 cmd에서 바로 클로드코드를 실행할 때는 아래 명령어를 사용한다.   
 명령어 (1) : npx win-claude-code   
 <img width="600" height="360" alt="image_7" src="https://github.com/user-attachments/assets/9b7fa4e2-1b43-429c-8eb1-d22b63f02e58" />
