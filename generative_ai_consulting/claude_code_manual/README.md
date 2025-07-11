@@ -7,13 +7,13 @@
 (1) 윈도우 cmd에서 wsl 설치 명령어를 통해 wsl을 설치하도록 하자.   
 아래 명령어는 최신 버전의 우분투 리눅스 환경을 설치하는 명령어다.       
 명령어 (1) : wsl --install   
-<img width="800" height="70" alt="image_1" src="https://github.com/user-attachments/assets/d275dd32-d7b0-40c4-b3c8-609c7037a100" />
+<img width="800" height="200" alt="image_1" src="https://github.com/user-attachments/assets/d275dd32-d7b0-40c4-b3c8-609c7037a100" />
 <br/>
                 
 (2) wsl 버전이 낮다면 우선 아래 링크를 통해 wsl을 업데이트 하자.   
 "wsl -l -v" 명령어를 실행했을 때 리눅스 버전이 2로 나오면 된다.          
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi           
-<img width="500" height="55" alt="image_2" src="https://github.com/user-attachments/assets/063f41a9-cb75-402f-8dce-d31691b283fa" />
+<img width="500" height="100" alt="image_2" src="https://github.com/user-attachments/assets/063f41a9-cb75-402f-8dce-d31691b283fa" />
 <br/>
             
 (3) wsl 명령어로 우분투에 진입하면 되지만 기본 배포판 충돌 문제가 나면 아래 순서로 해결한다.   
