@@ -63,7 +63,7 @@ Claude가 실제 브라우저를 조작하여 웹 작업을 자동화할 수 있
 (2) 경로         
 https://github.com/microsoft/playwright-mcp            
 <img width="1200" height="800" alt="image2" src="https://github.com/user-attachments/assets/f6e8c504-5a5f-4563-b4ec-9182d7f5c746" />
-<br/>
+<br/><br/>
 
 (3) 활용 가능 작업   
 1. 웹 자동화   
