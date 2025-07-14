@@ -8,7 +8,7 @@ Claude가 직접 사용자의 컴퓨터와 상호작용할 수 있게 해주는 
 
 (2) 경로   
 https://smithery.ai/server/@wonderwhy-er/desktop-commander   
-<img width="1000" height="500" alt="image1" src="https://github.com/user-attachments/assets/12563f72-e71b-4d46-b1d2-d145b9a97ba3" />
+<img width="1000" height="600" alt="image1" src="https://github.com/user-attachments/assets/12563f72-e71b-4d46-b1d2-d145b9a97ba3" />
 <br/><br/>
 
 (3) 활용 가능 작업   
