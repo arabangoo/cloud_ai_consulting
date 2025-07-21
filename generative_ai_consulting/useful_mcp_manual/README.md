@@ -108,6 +108,79 @@ https://github.com/microsoft/playwright-mcp
 ---
 <br/>
 
+[AWS API MCP 서버]      
+(1) 개요         
+AWS API MCP 서버는 MCP 클라이언트가 AWS CLI 명령을 통해 AWS 서비스 및 리소스와 상호작용할 수 있도록 하는 MCP 서버다.            
+<br/>
+
+(2) 경로   
+https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server               
+<img width="1200" height="800" alt="image3" src="https://github.com/user-attachments/assets/b9b4e500-89be-4a5f-8c4d-9d30561061ee" />
+<br/><br/>
+
+(3) 활용 가능 작업   
+1. 인프라 관리   
+- EC2 인스턴스 생성, 관리, 모니터링   
+- VPC, 서브넷, 보안 그룹 설정   
+- Auto Scaling 그룹 구성   
+- ELB/ALB 로드 밸런서 관리   
+
+2. 스토리지 서비스   
+- S3 버킷 생성 및 객체 관리   
+- EBS 볼륨 생성 및 연결   
+- EFS 파일 시스템 구성   
+- 백업 및 스냅샷 자동화   
+
+3. 데이터베이스 관리   
+- RDS 인스턴스 생성 및 관리   
+- DynamoDB 테이블 운영   
+- Aurora 클러스터 구성   
+- 데이터베이스 백업 및 복원   
+
+4. 컨테이너 및 서버리스      
+- ECS/EKS 클러스터 관리   
+- Lambda 함수 배포 및 관리   
+- Fargate 서비스 운영   
+- API Gateway 구성   
+
+5. 모니터링 및 로깅   
+- CloudWatch 메트릭 및 알람 설정   
+- CloudTrail 로그 분석   
+- Systems Manager 활용   
+- X-Ray 추적 설정       
+<br/>
+
+(4) MCP 설정 (서울 리전 대상)        
+```txt  
+{
+  "mcpServers": {
+    "awslabs.aws-api-mcp-server": {
+      "command": "python",
+      "args": [
+        "-m",
+        "awslabs.aws_api_mcp_server.server"
+      ],
+      "env": {
+        "AWS_REGION": "ap-northeast-2",
+        "AWS_API_MCP_PROFILE_NAME": "default",
+        "READ_OPERATIONS_ONLY": "false"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
+<br/>
+
+(5) 주의사항      
+1. python 활용 버전으로 json 등록 전 "pip install awslabs.aws-api-mcp-server" 명령어 실행 필요   
+<img width="1200" height="800" alt="image4" src="https://github.com/user-attachments/assets/c0605424-38b0-44c3-b53b-d9c0902aca66" />
+<br/>
+
+---
+<br/>
+
 [유용한 MCP 서버 목록 정리]         
 1. Figma MCP : AI 코딩 도구들이 Figma 디자인 데이터를 직접 액세스할 수 있도록 지원한다.    
    이를 통해 디자인을 보다 정확하게 구현할 수 있다.   
