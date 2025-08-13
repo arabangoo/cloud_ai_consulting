@@ -7,8 +7,8 @@ Claude가 직접 사용자의 컴퓨터와 상호작용할 수 있게 해주는 
 <br/>
 
 (2) 경로   
-https://smithery.ai/server/@wonderwhy-er/desktop-commander   
-<img width="1000" height="800" alt="image1" src="https://github.com/user-attachments/assets/12563f72-e71b-4d46-b1d2-d145b9a97ba3" />
+https://github.com/wonderwhy-er/DesktopCommanderMCP   
+![image1](https://github.com/user-attachments/assets/aaaa76d1-eaf6-4e80-a564-206a78f307cf)
 <br/><br/>
 
 (3) 활용 가능 작업   
@@ -36,13 +36,9 @@ https://smithery.ai/server/@wonderwhy-er/desktop-commander
 {
   "mcpServers": {
     "desktop-commander": {
-      "command": "cmd",
+      "command": "npx",
       "args": [
-        "/c",
-        "npx",
         "-y",
-        "@smithery/cli@latest",
-        "run",
         "@wonderwhy-er/desktop-commander"
       ]
     }
@@ -240,3 +236,4 @@ https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server
 12. FileSystem MCP : AI 모델이 파일 시스템과 상호작용하여    
     파일 읽기, 쓰기, 디렉토리 생성 등 다양한 파일 작업을 수행할 수 있도록 한다.   
     링크 - https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem      
+
