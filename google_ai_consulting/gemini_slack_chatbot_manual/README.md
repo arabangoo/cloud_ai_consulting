@@ -74,7 +74,7 @@ Slack API 설정 페이지 : https://api.slack.com/apps
 <br/>
 
 (7) 다음은 슬랙에서 채널 ID를 확인하고 메모장에 복사해둔다.     
-<img width="400" height="600" alt="image9" src="https://github.com/user-attachments/assets/96fd4033-8e89-4ac9-a9ec-a915bfac82aa" />
+<img width="400" height="600" alt="image9" src="https://github.com/user-attachments/assets/96fd4033-8e89-4ac9-a9ec-a915bfac82aa" />   
 <img width="500" height="600" alt="image10" src="https://github.com/user-attachments/assets/00ae756b-a3de-4c48-9d55-1859f9653108" />
 <br/>
 
@@ -107,5 +107,6 @@ Cloud Run 함수의 여러 탭 중에서 YAML 탭을 보면 함수 URL을 확인
 (12) 일상적인 질문에도 잘 대답해주니 여러 가지 질문으로 테스트 해보도록 한다.           
 <img width="1800" height="600" alt="image15" src="https://github.com/user-attachments/assets/3cfff26b-3169-4849-b312-9e093c21fd56" />
 <br/>
+
 
 
