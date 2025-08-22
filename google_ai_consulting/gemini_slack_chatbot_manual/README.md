@@ -80,7 +80,7 @@ Slack API 설정 페이지 : https://api.slack.com/apps
 
 (8) 지금까지 메모장에 복사해넣은 정보를 함수 코드 내용에 맞게 환경변수로 등록한다.
 <img width="700" height="600" alt="image11" src="https://github.com/user-attachments/assets/7aa75665-e8d1-4081-b0c6-1b5348287a06" />
-<br/>
+<br/><br/>
 
 함수까지 전부 작성이 끝났으면 리소스 생성 절차는 다 끝난 것이다.   
 이제 남은 건 Cloud Run 함수와 Slack을 연동해주는 작업뿐이다.   
@@ -107,3 +107,4 @@ Cloud Run 함수의 여러 탭 중에서 YAML 탭을 보면 함수 URL을 확인
 (12) 일상적인 질문에도 잘 대답해주니 여러 가지 질문으로 테스트 해보도록 한다.           
 <img width="1800" height="600" alt="image15" src="https://github.com/user-attachments/assets/3cfff26b-3169-4849-b312-9e093c21fd56" />
 <br/>
+
