@@ -62,7 +62,7 @@ Slack API 설정 페이지 : https://api.slack.com/apps
 }
 ```
 <img width="1600" height="900" alt="image6" src="https://github.com/user-attachments/assets/58173b50-0999-407d-b77f-84a8ae7f70e2" />
-<br/>
+<br/><br/>
    
 (5) 슬랙봇이 생성되면 "OAuth & Permissions" 항목에 들어가서 OAuth Tokens을 인스톨한다.      
 이때 "Bot User OAuth Token"이 생성되는데 메모장 등에 복사해둔다.      
@@ -107,4 +107,5 @@ Cloud Run 함수의 여러 탭 중에서 YAML 탭을 보면 함수 URL을 확인
 (12) 일상적인 질문에도 잘 대답해주니 여러 가지 질문으로 테스트 해보도록 한다.           
 <img width="1800" height="600" alt="image15" src="https://github.com/user-attachments/assets/3cfff26b-3169-4849-b312-9e093c21fd56" />
 <br/>
+
 
